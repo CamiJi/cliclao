@@ -1,0 +1,192 @@
+[1. Nom du projet]
+Domaine : Cliclao.com
+
+
+[2. Vision ou pitch du projet]
+En quelques phrases, déterminer le but de votre application web.
+
+Voyage à l'étranger sur mesure - le site web vous met en relation avec des agences locales francophones à l'autre bout du monde pour vous aider à organiser vos voyages sur mesure.
+
+Business Model : Evaneos.com
+
+Sites références => http://www.voyageursdumonde.fr/voyage-sur-mesure
+				    http://www.evaneos.com/
+				    http://www.marcovasco.fr/
+				    http://www.shantitravel.com/
+
+
+
+
+******************************************************************************************************
+STRUCTURE DU SITE          //////////////////////////////////////////////////////////////////////////
+******************************************************************************************************
+
+
+MENU PERMANENT EN HAUT DE PAGE 
+
+	-logo : + agences de voyages locales francophones
+ 	-Destinations  avec tout les pays disponibles s'affichant en "hover"
+ 	-Ou partir? href = page oupartir?
+ 	-Contactez-nous avec l'apparition de nos coordonnées et d'un formulaire de contact en Jquery
+ 	-Connexion user/admin
+
+
+
+PAGE INDEX : PAGE D'ACCEUIL 
+
+	*HAUT DE PAGE*
+	 	- video intégrée en 1ère page (fond video ), à défaut belles images dynamique
+	 	- Formulaire de recherche "Ou souhaitez vous partir" / href = page destinations
+	 	- API Google  avec tout les voyages en cours
+
+ 	*MAIN* => design "tuiles" intuitif, pragmatique , mélant infos commerciales et infos institutionnel
+	 	- Propositions de voyages / destinations - dynamique sur la 1ère page selon le profil de l'utilisateur/  href = les voyages en questions
+	 	- nos avantages, notre présentation href = Page Argumentaire
+	 	- Nos voyageurs : renvoi à la page des voyageurs/blog avec leur photos et commentaires
+	 	- API Facebook / Twitter (option)
+
+
+
+
+
+PAGE DESTINATIONS (POUR CHAQUE PAYS)
+	- dynamiser en PHP
+
+	- intégrer une galerie photo
+	- intégrer un descriptif du pays 
+	- intégrer une API météo pour chaque pays
+
+	- propositions de voyage joliment présentées
+	- lien vers les recommendations du ministère des affaires étrangères
+
+	- en bas onglet "d'autres destinations similaires"
+
+	- intégrer une API webcam (optionnel)
+
+
+
+
+
+PAGE ITINÉRAIRE (POUR CHAQUE VOYAGE)
+
+	- dynamisée en PHP
+
+	- thèmes pour chaque voyage (aventure, famille couple, marche, lune de miel, etc) 
+	- périodes conseillées pour chaque voyage (petit graphique mois par mois)
+	- budget moyen symbolisé par des € (de 1 à 5€)
+	- difficulté du voyage selon l'activité et la destination symbolisé par des "à trouver" (de 1 à 5)
+
+	- intégration de l'itinéraire avec l'API GoogleMaps
+	- intégration de l'agence locale qui organise ce voyage avec la photo d'un conseiller pour donner un visage humain à la personne qui va reprendra la demande
+
+	-Jour par jour avec description + photo 
+
+	-bouton prendreContact + de renseignement qui déroule en Jquery un petit formulaire de contact
+
+
+	-insertion de photo et de commentaires users
+
+	- en bas onglet "d'autres voyages similaires"
+
+	-intégration de l'API expedia pour la recherche de billet d'avion (optionnel)
+
+
+
+PAGE OÙ PARTIR?
+	- Outils d'aide à la décision
+	- Formulaire de recherche avec les éléments des voyages
+	- Reprise de chaque thématique, de chaque continent, de chaque période, de chaque difficulté, de chaque budget
+	- exemple : http://www.evaneos.com/ou-partir/
+
+
+
+PAGE NOS VOYAGEURS
+	-photos video et Gmap de notre communauté de voyageurs
+
+PAGE ASSURANCES 
+	- texte fournis par Camille
+
+PAGE AVANTAGES/ARGUMENTAIRE/PRÉSENTATION
+	- texte fournis par Camille
+
+PAGE QUI SOMMES NOUS? 
+	- présentation générale de notre petite équipe puis
+	- Olivier : photo, fonction dans l'équipe - présentation + contact linkedIn/Viadeo/Cv en ligne
+	- Clément : photo, fonction dans l'équipe - présentation + contact linkedIn/Viadeo/Cv en ligne
+	- Camille : photo, fonction dans l'équipe - présentation + contact linkedIn/Viadeo/Cv en ligne
+
+
+
+PAGE CGU : TEXTE FOURNIS PAR CAMILLE
+	- pop-Up en avant plan avec les CGU
+
+SESSION UTILISATEUR :
+	- possibilité de rentrer des photos/videos
+	- possibilité de rentrer des récits
+	- suppression possible
+	- petite page / profil
+
+
+
+PANNEAU ADMIN:
+	- TO DO
+	- ajout de voyage
+	- ajout de jours
+
+
+
+FOOTER - PERMANENT EN BAS DE PAGE 
+	-CGU : 
+	-Contact
+	-Qui sommes nous
+	-Adress + contact
+	-lien réseau sociaux
+
+
+
+
+
+************************************************************************************************************************************
+DESIGN (Olivier)
+************************************************************************************************************************************
+
+	-Choix de la typo
+	-Choix du logo
+	-Choix de la charte des couleurs
+
+	-Agencement des dilfférents éléments sur les pages (les tuiles et leur espacement)
+	-Agencement des différents ééments dans les éléments (sic - dans les tuiles quoi)
+
+	-Signalétique en plus de bootstrap (si BS pas assez performant)
+
+	-Constitution de la banque de donnée images (archive olivier)
+
+
+
+
+[3. Fonctionnalités principales + Estimation de temps en jours]
+-> Inscription (0,5j)
+	Intégration HTML/CSS
+	Gestion des erreurs js / php
+	Hashage du mot de password
+	Enregistrement BDD
+	Accessibilité du formulaire
+	Envoi un email de confirmation
+
+
+-> Login (0,5j)
+	Intégration HTML/CSS
+	Gestion des erreurs js / php
+	Authentification 
+	Accessibilité du formulaire
+
+
+
+
+[4. Equipe (membre + rôle)]
+
+-> Clément : développeur back-end
+
+-> Olivier : intégrateur front-end, design
+
+-> Camille : le reste, un peu de tout, les textes aussi

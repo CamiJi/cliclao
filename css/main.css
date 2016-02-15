@@ -4,8 +4,19 @@
    Author's custom styles
    ========================================================================== */
 
+.main-nav {
+}
+.container-country {
+	background: #FFF;
+	display: none;
+}
+.container-country.active {
+	display: block;
+}
 
-
+#video{
+	background-image: 
+}
 
 
 
