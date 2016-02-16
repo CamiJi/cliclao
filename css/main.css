@@ -8,7 +8,7 @@
 }
 .container-country {
 	background: #FFF;
-	display: none;
+	/*display: none;*/
 }
 .container-country.active {
 	display: block;
@@ -19,7 +19,10 @@
 }
 
 
-
+footer {
+	background-color: #FFAAAA;
+	font-size: 2em;
+}
 
 
 
