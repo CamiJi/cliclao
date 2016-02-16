@@ -144,7 +144,7 @@
         </main><!--   Collapsed Main -->
 
 
-
+        <?php include(__DIR__.'/footer.php'); ?>
 
 
 
