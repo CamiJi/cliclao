@@ -6,7 +6,7 @@ $( document ).ready(function() {
 	console.log("JQuery chargé");
 
 
-
+ 
 
 
 // Ici la logique du menu déroulant conteant la liste des pays.
