@@ -24,11 +24,11 @@ STRUCTURE DU SITE          /////////////////////////////////////////////////////
 
 MENU PERMANENT EN HAUT DE PAGE 
 
-	-logo : + agences de voyages locales francophones
- 	-Destinations  avec tout les pays disponibles s'affichant en "hover"
- 	-Ou partir? href = page oupartir?
+	-logo : + agences de voyages locales francophones----------DONE
+ 	-Destinations  avec tout les pays disponibles s'affichant en "hover"--------------DONE
+ 	-Ou partir? href = page oupartir?--------DONE
  	-Contactez-nous avec l'apparition de nos coordonnées et d'un formulaire de contact en Jquery
- 	-Connexion user/admin
+ 	-Connexion user/admin----DONE
 
 
 
@@ -36,13 +36,13 @@ PAGE INDEX : PAGE D'ACCEUIL
 
 	*HAUT DE PAGE*
 	 	- video intégrée en 1ère page (fond video ), à défaut belles images dynamique
-	 	- Formulaire de recherche "Ou souhaitez vous partir" / href = page destinations
+	 	- Formulaire de recherche "Ou souhaitez vous partir" / href = page destinations **************** DONE
 	 	- API Google  avec tout les voyages en cours
 
  	*MAIN* => design "tuiles" intuitif, pragmatique , mélant infos commerciales et infos institutionnel
 	 	- Propositions de voyages / destinations - dynamique sur la 1ère page selon le profil de l'utilisateur/  href = les voyages en questions
-	 	- nos avantages, notre présentation href = Page Argumentaire
-	 	- Nos voyageurs : renvoi à la page des voyageurs/blog avec leur photos et commentaires
+	 	- nos avantages, notre présentation href = Page Argumentaire ----------DONE
+	 	- Nos voyageurs : renvoi à la page des voyageurs/blog avec leur photos et commentaires-----------DONE
 	 	- API Facebook / Twitter (option)
 
 

@@ -4,17 +4,51 @@
    Author's custom styles
    ========================================================================== */
 
-#rowSearch {
-	margin-top: 130px;
-	margin-bottom: 50px;
-	padding-top: 50px;
-	height: 200px;
- 
+
+
+/****************************************************************************
+FONT PART
+*****************************************************************************/
+
+
+/*Source : http://www.w3schools.com/css/css_link.asp*/
+
+/* unvisited link */
+a:link {
+    color: #DF9801;
+}
+
+/* visited link */
+a:visited {
+    color: #76A022;
+}
+
+/* mouse over link */
+a:hover {
+    color: #76A022;
+}
+
+/* selected link */
+a:active {
+    color: hotpink;
 }
 
 
+
+
+
+
+
+
+
+footer {
+	background-color: black;
+	font-size: 1em;
+}
+
+
+
 #navDestination{
-	width: 60%;
 	margin-left: 25%;
 	margin-top: 25px;
 	position:absolute;
@@ -31,25 +65,58 @@
 }
 
 .container-country {
-	background: #FFF;
+	background: white ;
 	display: none;
 }	
 
+.continentsListePays {
+	text-decoration: underline;
+}
+
+
+
+
+/*Page Index*/
 #apiGm {
 	margin-bottom: 50px;
 }
-footer {
-	background-color: black;
-	font-size: 1em;
+
+#rowSearch {
+	margin-top: 100px;
+	margin-bottom: 50px;
+	padding-top: 50px;
+	height: 400px;
+	background-image: url(../img/home-voyage-sur-mesure2-1980x450.jpg);
+ 
+}
+
+#slogan {
+	background-color: white;
+  	border-radius: 10px;
+  	margin-top: 50px;
+  	margin-bottom: 20px;
+  	text-align: center;
+
 }
 
 
+/*Page Destinations*/
+#bandeau{
+	width: 100%;
+	height: 100px;
+	position: relative;
+}
 
+#colonne1{
+	background-color: green;
+	width: 100%;
 
+}
 
-
-
-
-
+#colonne2{
+	background-color: pink;
+	width: 100%;
+	
+}
 
 
