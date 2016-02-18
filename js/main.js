@@ -1,24 +1,37 @@
-$(document).ready(function($) {
 
-	$('#btnDestination').click(function(e) {
-		e.preventDefault();
 
-		$navDestination = $('#navDestination');
-		if(!$navDestination.hasClass('active')) {
-			$navDestination.addClass('active');
+
+$( document ).ready(function() {
+
+	console.log("JQuery chargé");
+
+
+
+
+
+// Ici la logique du menu déroulant conteant la liste des pays.
+// 1. Lorsque la souris passe sur le bouton on affiche le menu
+	$( "#btnDestination" ).mouseover(
+		function() {
+			$("#navDestination").show();
 		}
-		else {
-			$navDestination.removeClass('active');
+	);
+// 2. Lorsque la souris passe sur le menu on le laisse afficher
+
+	$( "#navDestination" ).mouseover(
+		function() {
+			$("#navDestination").show();
 		}
-	});
+	);
 
-	$('#navDestination').mouseout(function(e) {
-		e.preventDefault();
-	    $('#navDestination').hide();
-	});
+// 3. Lorsque la souris sors du menu on le fait disparaitre
 
-	$('main').click(function(e) {
-		e.preventDefault();
-	    $('#navDestination').hide();
-	});
+	$( "#navDestination" ).mouseout(
+		function() {
+			$("#navDestination").hide();
+		}
+	);
+
+
+
 });
