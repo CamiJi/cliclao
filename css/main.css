@@ -4,17 +4,40 @@
    Author's custom styles
    ========================================================================== */
 
-.main-nav {
+#rowSearch {
+	margin-top: 130px;
+	margin-bottom: 30px;
+	height: 250px;
+
 }
+
+
+#navDestination{
+	width: 60%;
+	margin-left: 25%;
+	margin-top: 25px;
+	position:absolute;
+  	z-index: 1;
+  	padding: 15px;
+  	border-style: solid;
+  	border-radius: 10px;
+  	border-color: black;
+  	border-width: 1px;
+}
+
+#navDestination ul {
+	list-style-type: none; 
+}
+
 .container-country {
 	background: #FFF;
 	display: none;
-}
+}	
 
 
 footer {
-	background-color: #FFAAAA;
-	font-size: 2em;
+	background-color: black;
+	font-size: 1em;
 }
 
 
