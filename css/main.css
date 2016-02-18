@@ -6,8 +6,9 @@
 
 #rowSearch {
 	margin-top: 130px;
-	margin-bottom: 30px;
-	height: 250px;
+	margin-bottom: 50px;
+	padding-top: 50px;
+	height: 200px;
  
 }
 
@@ -34,7 +35,9 @@
 	display: none;
 }	
 
-
+#apiGm {
+	margin-bottom: 50px;
+}
 footer {
 	background-color: black;
 	font-size: 1em;

@@ -41,7 +41,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-3">
-                <img src="img/cliclao_logo.png">
+                <img src="img/logo_cliclao-v1.png">
               </div>
               <div class="col-md-9">  
                 <ul class="nav navbar-nav">
@@ -152,12 +152,12 @@
 
               <div class="container">
                 <div class="row">
-                  <div class="col-md-6 col-md-offset-1">
+                  <div class="col-md-6 col-md-offset-3">
                    <h1>Créer votre voyage sur mesure avec une agence locale</h1>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-6 col-md-offset-1">
+                  <div class="col-md-6 col-md-offset-3">
                     <div class="input-group">
                       <span class="input-group-btn">
                         <button class="btn btn-default" type="button">Go!</button>
@@ -180,23 +180,33 @@
 
           <!-- Start Main Container -->
           <div class="container"> 
+
+            <div id="apiGm" class="row">
+              <label for="googleMaps">Nos voyageurs à travers le monde:</label>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63297476.45919606!2d33.91707391944581!3d14.463352354156584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1455806321372" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen id="googleMaps"></iframe>
+              
+            </div>
+
+
+
+
             <!-- Start Row Thumbnails 1 -->
             <div class="row" id=ThumbnailsRow1>
-              <div class = "col-sm-6 col-md-3">
+              <div class = "col-sm-6 col-md-4">
                 <div class="thumbnail tile tile-medium tile-teal">
                   <a href="#" >
                     <h1>Tuile1</h1>
                   </a>                  
                 </div>
               </div>
-              <div class = "col-sm-6 col-md-3">
+              <div class = "col-sm-6 col-md-4">
                 <div class="thumbnail tile tile-medium tile-teal">
                   <a href="#" >
                     <h1>Tuile2</h1>
                   </a>                  
                 </div>
               </div>
-              <div class = "col-sm-6 col-md-3">
+              <div class = "col-sm-6 col-md-4">
                 <div class="thumbnail tile tile-medium tile-teal">
                   <a href="#" >
                     <h1>Tuile2</h1>
@@ -210,21 +220,21 @@
 
             <!-- Start Row Thumbnails 2 -->
             <div class="row" id=ThumbnailsRow2>
-              <div class = "col-sm-6 col-md-3">
+              <div class = "col-sm-6 col-md-4">
                 <div class="thumbnail tile tile-medium tile-teal">
                   <a href="#" >
                     <h1>Tuile4</h1>
                   </a>                  
                 </div>
               </div>
-              <div class = "col-sm-6 col-md-3">
+              <div class = "col-sm-6 col-md-4">
                 <div class="thumbnail tile tile-medium tile-teal">
                   <a href="#" >
                     <h1>Tuile5</h1>
                   </a>                  
                 </div>
               </div>
-              <div class = "col-sm-6 col-md-3">
+              <div class = "col-sm-6 col-md-4">
                 <div class="thumbnail tile tile-medium tile-teal">
                   <a href="#" >
                     <h1>Tuile6</h1>
