@@ -30,16 +30,16 @@
         <nav id="nav-main" role="navigation" class="navbar navbar-default navbar-fixed-top">
 
           <!-- Star DivNavBar 1 -->
-          <div class="container">
-            <div id="row">
+          <div class="row" id="rowNavBar1">
+            <div class="container">
               <div class="col-md-4"><p>Voyages individuels crées par des agences locales</p></div>
-              <div class="col-md-4"><p><a href="#">DEMANDE DE DEVIS</a></p></div>
-              <div class="col-md-4"><p>ESPACE CLIENT : <a href="#">SE CONNECTER </a> | <a href="#">  S'INSCRIRE</a><p></div>            
-            </div><!--  end navBar1Row -->
-          </div><!--  end Container -->
+              <div class="col-md-4"><a href="#">DEMANDE DE DEVIS</a></div>
+              <div class="col-md-4"><p>ESPACE CLIENT :  <a href="#">SE CONNECTER </a> | <a href="#">  S'INSCRIRE</a></p></div>            
+            </div><!--  end Container -->
+          </div><!--  end navBar1Row -->
 
           <div class="container">
-            <div class="row">
+            <div class="row" id="rowNavBar2">
               <div class="col-md-3">
                 <img src="img/logo_cliclao-v1.png">
               </div>
@@ -258,7 +258,9 @@
                 <p>&copy; Cliclao 2015</p>
               </div>
               <div class="col-md-4">
-                <p>L'adresse</p>
+                <p>L'adresse: </br>
+                136 Avenue Pablo Picasso,</br> 
+                92000 Nanterre</p>
                 <a href="#">Contact</a>
               </div>
               <div class="col-md-4">
