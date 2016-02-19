@@ -80,6 +80,18 @@ footer {
 #apiGm {
 	margin-bottom: 50px;
 }
+<<<<<<< HEAD
+=======
+footer {
+	background-color: #76a022;
+	font-size: 1em;
+}
+
+#navDestination {
+	background-color: #76a022;
+	
+}
+>>>>>>> origin/master
 
 #rowSearch {
 	margin-top: 100px;
