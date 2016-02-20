@@ -22,10 +22,6 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-
- 
-
         <main>
           <div id="bandeau">
             <!-- Insertion d'une image background sur toute la largeur -->
@@ -171,8 +167,7 @@
         </main><!--   End Main -->
 
 
-
-
+    
 
 
 

@@ -52,7 +52,6 @@
 
               </div>          
             </div><!--  end navBar2Row -->
-          </div><!--  end Container -->
 
             
             <!-- Start Menu des pays s'affichant avec le hover sur le #btnDestination "Les Destinations"  -->
@@ -137,8 +136,9 @@
                 </div> <!-- End Row Liste des pays -->
               </div> <!-- End Container Pays -->
             </div> <!-- End Nav Destination -->
+          </div><!--  end Container -->
         </nav><!-- end Nav Bar -->
-
+ 
         <main>
 
 
