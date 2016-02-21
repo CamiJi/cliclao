@@ -28,55 +28,75 @@
 
     <main>
       <div class="container" id="mainContainer">
+        <div class="row">
 
 
 
-
-        <div class="col-xs-12 col-md-8" id="colMainItineraire">
-          <div id="divImgItineraire">
-            <img src="img/vc.jpg" id="imgItineraire">
-          </div> <!-- end divImgItineraire -->
-          <div id="divNomItineraire">
-            <h3>Canada : Québec en famille</h3>
-          </div> <!-- End divNomItineraire  -->
-          <div id="divDescriptionItineraire">
-            <p id="descriptionItineraire">Au Québec, il y a tant de choses à faire et à voir que c’est une destination idéale à découvrir en famille. Les enfants vont adorer dormir dans un tipi et apprendre l’histoire des amérindiens, observer les animaux sauvages dans leur habitat naturel : castor, orignal, ours noir, en découvrir d’autres au fabuleux zoo sauvage de St Félicien, aller faire du kayak ou de l’accrobranche avec des vues panoramiques sur le fjord du Saguenay, nourrir les animaux de la ferme dans la région de Tadoussac pour enfin partir sur l’eau pour observer les géants des mers : les baleines à bosse et autres mammifères marins. Vos enfants vous en reparleront longtemps de ce voyage ! Les hébergements ont été sélectionnés en fonction des préférences des enfants.</p>
-          </div> <!-- End #divDescriptionItineraire -->          
-        </div> <!-- End colMainItineraire -->
-
-
-
-
-
+          <div class="col-xs-12 col-md-7" id="colMainItineraire">
+            <div id="divImgItineraire">
+              <img src="img/vc.jpg" id="imgItineraire">
+            </div> <!-- end divImgItineraire -->
+            <div id="divNomItineraire">
+              <h3>Canada : Québec en famille</h3>
+            </div> <!-- End divNomItineraire  -->
+            <div id="divDescriptionItineraire">
+              <p id="descriptionItineraire">Au Québec, il y a tant de choses à faire et à voir que c’est une destination idéale à découvrir en famille. Les enfants vont adorer dormir dans un tipi et apprendre l’histoire des amérindiens, observer les animaux sauvages dans leur habitat naturel : castor, orignal, ours noir, en découvrir d’autres au fabuleux zoo sauvage de St Félicien, aller faire du kayak ou de l’accrobranche avec des vues panoramiques sur le fjord du Saguenay, nourrir les animaux de la ferme dans la région de Tadoussac pour enfin partir sur l’eau pour observer les géants des mers : les baleines à bosse et autres mammifères marins. Vos enfants vous en reparleront longtemps de ce voyage ! Les hébergements ont été sélectionnés en fonction des préférences des enfants.</p>
+            </div> <!-- End #divDescriptionItineraire -->          
+          </div> <!-- End colMainItineraire -->
 
 
 
 
 
 
-        <div class="col-xs-6 col-md-4" id="colCaractItineraires">
-          <div id="divCaracteristiquesItineraire">
-            <div id="divPrixItineraire">
-              <p id="prixItineraire">à partir de <br/>659 € par personne<br/> hors vols</p>
-            </div> <!-- End#divPrixItineraire -->
-            <div id="divDifficulteItineraire">
-              <p id="difficulteItineraire">Niveau de Dificulté </br><i class="fa fa-hand-scissors-o"></i> <!-- TODO: on repetera ce signe le nombre de niveau de difficulté -->  </p>
-            </div> <!-- End#divDifficulteItineraire -->
-            <div id="divThemesItineraire">
-              <i class="fa fa-anchor"></i>
-              <i class="fa fa-car"></i>
-              <i class="fa fa-ship"></i>
-              <i class="fa fa-bicycle"></i>            
-            </div> <!-- End divThemesItineraire -->
-            <button type="button" class="btn btn-success">Demandez votre devis</button> </br>
-            <button type="button" class="btn btn-default">Ajoutez aux favoris</button>
-            <div id="divApiGMItineraire">
-              <img src="img/mapCanada.jpg" alt="" id="apiGMItineraire">             
-            </div> <!-- end #divApiGMItineraire -->
 
-            
-          </div> <!-- End #divCaracteristiquesItineraire -->         
-        </div> <!-- End colCaractItineraires -->
+
+
+
+
+          <div class="col-xs-6 col-md-4" id="colCaractItineraires">
+            <div id="divCaracteristiquesItineraire">
+              <div id="divPrixItineraire">
+                <p id="prixItineraire">à partir de <br/>659 € par personne<br/> hors vols</p>
+              </div> <!-- End#divPrixItineraire -->
+              <div id="divDifficulteItineraire">
+                <p id="difficulteItineraire">Niveau de Dificulté </br><i class="fa fa-hand-scissors-o"></i> <!-- TODO: on repetera ce signe le nombre de niveau de difficulté -->  </p>
+              </div> <!-- End#divDifficulteItineraire -->
+              <div id="divThemesItineraire">
+                <i class="fa fa-anchor"></i>
+                <i class="fa fa-car"></i>
+                <i class="fa fa-ship"></i>
+                <i class="fa fa-bicycle"></i>            
+              </div> <!-- End divThemesItineraire -->
+
+              <div id="divGroupButtons">
+
+
+
+
+
+
+
+
+
+
+              
+                <div id="divButtonDevis">
+                  <button type="button" class="btn btn-success">Demandez votre devis</button>
+                </div> <!-- End #divButtonDevis -->
+                <div id="divButtonFav">
+                  <button type="button" class="btn btn-default">Ajoutez aux favoris</button>
+                </div> <!-- End of #divButtonFav -->
+              </div> <!-- End of #divGroupButtons -->
+
+              <div id="divApiGMItineraire">
+                <img src="img/mapCanada.jpg" alt="" id="apiGMItineraire">             
+              </div> <!-- end #divApiGMItineraire -->
+
+              
+            </div> <!-- End #divCaracteristiquesItineraire -->         
+          </div> <!-- End colCaractItineraires -->
+        </div> <!-- end of row Itineraire -->
       </div> <!-- end MainContainer -->
     </main>
       
