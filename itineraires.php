@@ -56,37 +56,42 @@
 
           <div class="col-xs-6 col-md-4" id="colCaractItineraires">
             <div id="divCaracteristiquesItineraire">
-              <div id="divPrixItineraire">
-                <p id="prixItineraire">à partir de <br/>659 € par personne<br/> hors vols</p>
-              </div> <!-- End#divPrixItineraire -->
-              <div id="divDifficulteItineraire">
-                <p id="difficulteItineraire">Niveau de Dificulté </br><i class="fa fa-hand-scissors-o"></i> <!-- TODO: on repetera ce signe le nombre de niveau de difficulté -->  </p>
-              </div> <!-- End#divDifficulteItineraire -->
-              <div id="divThemesItineraire">
-                <i class="fa fa-anchor"></i>
-                <i class="fa fa-car"></i>
-                <i class="fa fa-ship"></i>
-                <i class="fa fa-bicycle"></i>            
-              </div> <!-- End divThemesItineraire -->
+              <div id="divContainerCaractItineraire" class="container">
+                <div id="divCaracteristiquesSql" class="row">
+                  <div id="divPrixItineraire" class="col-md-1">
+                    <h4>Prix:</h4>
+                    <p id="prixItineraire">à partir de <b>659 € </b>par personne</p>
+                  </div> <!-- End#divPrixItineraire -->
+
+                  <div id="divDifficulteItineraire" class="col-md-1">
+                    <h4 id="difficulteItineraire">Niveau de Difficulté : </h4>
+                    <i class="fa fa-hand-scissors-o"></i>
+                    <i class="fa fa-hand-scissors-o"></i>
+                    <i class="fa fa-hand-scissors-o"></i>                  
+                     <!-- TODO: on repetera ce signe le nombre de niveau de difficulté -->  
+                  </div> <!-- End#divDifficulteItineraire -->
+
+                  <div id="divThemesItineraire" class="col-md-2">
+                    <h4>Le voyage correspond aux thèmes suivants:</h4>
+                    <i class="fa fa-anchor"></i>
+                    <i class="fa fa-car"></i>
+                    <i class="fa fa-ship"></i>
+                    <i class="fa fa-bicycle"></i>            
+                  </div> <!-- End divThemesItineraire -->
+
+                </div> <!-- End of #divContainerCaractItineraire --> 
+
+              </div> <!-- End of #divCaracteristiquesSql -->
 
               <div id="divGroupButtons">
-
-
-
-
-
-
-
-
-
-
-              
                 <div id="divButtonDevis">
-                  <button type="button" class="btn btn-success">Demandez votre devis</button>
+                  <button type="button" class="btn btn-success btn-block">Demandez votre devis</button>
                 </div> <!-- End #divButtonDevis -->
+
                 <div id="divButtonFav">
-                  <button type="button" class="btn btn-default">Ajoutez aux favoris</button>
+                  <button type="button" class="btn btn-default btn-block">Ajoutez aux favoris</button>
                 </div> <!-- End of #divButtonFav -->
+
               </div> <!-- End of #divGroupButtons -->
 
               <div id="divApiGMItineraire">

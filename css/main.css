@@ -212,9 +212,10 @@ footer a:hover {
 	border-radius: 10px;
 	margin:7px;
 	padding: 7px;
+	text-align: right;
 
 }
 
 #divGroupButtons{
-	margin-bottom: 15px;
+	margin: 15px;
 }
