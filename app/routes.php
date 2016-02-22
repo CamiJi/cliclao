@@ -4,7 +4,7 @@
 		['GET', '/', 'Default#home', 'home'],
 
 		['GET', '/destination', 'Destination#index', 'destination'],
-		['GET', '/itineraire', 'Itineraire#index', 'itineraire'],
+		['GET', '/itineraire/[:id]', 'Itineraire#showIt', 'itineraire'],
 
 		['GET', '/destination/[:country]', 'Destination#showCountry', 'destinationCountry'],
 
