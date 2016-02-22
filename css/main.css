@@ -75,7 +75,9 @@ footer a:hover {
 }
 
 
-
+footer img {
+	width: 30px;
+}
 
 
 
@@ -218,4 +220,20 @@ footer a:hover {
 
 #divGroupButtons{
 	margin: 15px;
+}
+
+#colDayByDay{
+	border-color: #DF9801;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	margin:7px;
+	padding: 7px;
+}
+
+.dayByday {
+	border-bottom-style: solid;
+	border-bottom-color: grey;
+	border-width: 1px;
+	margin-bottom: 20px;
 }
