@@ -1,0 +1,242 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+/****************************************************************************
+FONT PART
+*****************************************************************************/
+
+
+
+
+
+@font-face {
+    font-family: "gotham";
+    src: url('../fonts/Gotham-XLight.otf');
+}
+
+
+/*Body*/
+
+body{
+	font-family: "gotham";
+	text-align: justify;
+}
+
+#main {
+	margin-top: 180px;
+}
+
+/*Source : http://www.w3schools.com/css/css_link.asp*/
+
+/* unvisited link */
+a:link {
+    color: #76A022;
+}
+
+/* visited link */
+a:visited {
+    color: #76A022;
+}
+
+/* mouse over link */
+a:hover {
+    color: #76A022;
+}
+
+button {
+	margin: 5px;
+}
+
+img {
+	width: 100%;
+}
+
+/*FOOTER STYLE*/
+footer {
+	background-color: #DF9801;
+	font-size: 1em;
+	color: black;
+}
+
+/* unvisited link */
+footer a:link {
+    color: black;
+}
+
+/* visited link */
+footer a:visited {
+    color: black;
+}
+
+/* mouse over link */
+footer a:hover {
+    color: black;
+}
+
+
+footer img {
+	width: 30px;
+}
+
+
+
+/*Nav-Bar + Menu pays*/
+
+#rowNavBar1{
+	background-color: #DF9801;
+}
+
+
+/* unvisited link */
+#rowNavBar1 a:link {
+    color: black;
+}
+
+/* visited link */
+#rowNavBar1 a:visited {
+    color: black;
+}
+
+/* mouse over link */
+#rowNavBar1 a:hover {
+    color: black;
+}
+
+#rowNavBar2{
+	height: 50px;
+	font-size: 1.5em;
+}
+
+
+
+#navDestination {
+	margin-top: 25px;
+	position:absolute;
+  	z-index: 1;
+  	padding: 15px;
+  	border-style: solid;
+  	border-radius: 10px;
+  	border-color: #DF9801;
+  	border-width: 1px;
+  	background-color: white;
+}
+
+#navDestination ul {
+	list-style-type: none; 
+}
+
+.container-country {
+	background: white ;
+	display: none;
+}	
+
+.continentsListePays {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/*Page Index*/
+#apiGm {
+	margin-bottom: 50px;
+}
+
+
+
+
+
+#rowSearch {
+	margin-bottom: 50px;
+	padding-top: 50px;
+	height: 400px;
+	background-image: url(../img/home-voyage-sur-mesure2-1980x450.jpg);
+ 
+}
+
+#slogan {
+
+	color: white;
+  	border-radius: 10px;
+  	margin-top: 50px;
+  	margin-bottom: 20px;
+  	text-align: center;
+
+}
+
+
+/*Page Destinations*/
+#bandeau{
+	width: 100%;
+}
+
+#colonne1{
+	width: 100%;
+
+}
+
+#colonne2{
+	background-color: #EEEEEE;
+	width: 100%;
+	
+}
+
+/*Page Itineraire*/
+
+
+#mainContainer{
+	margin-top: 50px;
+}
+
+#colMainItineraire{
+	border-color: #DF9801;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	margin:7px;
+	padding: 7px;
+
+}
+
+
+
+#colCaractItineraires{
+	border-color: #DF9801;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	margin:7px;
+	padding: 7px;
+	text-align: right;
+
+}
+
+#divGroupButtons{
+	margin: 15px;
+}
+
+#colDayByDay{
+	border-color: #DF9801;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	margin:7px;
+	padding: 7px;
+}
+
+.dayByday {
+	border-bottom-style: solid;
+	border-bottom-color: grey;
+	border-width: 1px;
+	margin-bottom: 20px;
+}
