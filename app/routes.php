@@ -6,6 +6,8 @@
 		['GET', '/destination', 'Destination#index', 'destination'],
 		['GET', '/itineraire', 'Itineraire#index', 'itineraire'],
 
+		['GET', '/destination/[:country]', 'Destination#showCountry', 'destinationCountry'],
+
 
 		['GET', '/login', 'Login#index', 'login'],
 		['POST', '/loginUser', 'Login#loginUser', 'loginUser'],

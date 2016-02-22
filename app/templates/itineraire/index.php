@@ -9,7 +9,7 @@
 
           <div class="col-xs-12 col-md-7" id="colMainItineraire">
             <div id="divImgItineraire">
-              <img src="<?= $this->assetUrl('img/vc.jpg" id="imgItineraire') ?>">
+              <img id="imgItineraire" src="<?= $this->assetUrl('img/vc.jpg' ) ?>">
             </div> <!-- end divImgItineraire -->
             <div id="divNomItineraire">
               <h3>Canada : Québec en famille</h3>
@@ -69,7 +69,7 @@
               </div> <!-- End of #divGroupButtons -->
 
               <div id="divApiGMItineraire">
-                <img src="img/mapCanada.jpg" alt="" id="apiGMItineraire">             
+                <img src="<?= $this->assetUrl('img/mapCanada.jpg') ?>" alt="" id="apiGMItineraire">             
               </div> <!-- end #divApiGMItineraire -->
              
             </div> <!-- End #divCaracteristiquesItineraire -->         
