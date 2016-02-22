@@ -9,7 +9,7 @@
 
           <div class="col-xs-12 col-md-7" id="colMainItineraire">
             <div id="divImgItineraire">
-              <img src="img/vc.jpg" id="imgItineraire">
+              <img src="<?= $this->assetUrl('img/vc.jpg" id="imgItineraire') ?>">
             </div> <!-- end divImgItineraire -->
             <div id="divNomItineraire">
               <h3>Canada : Québec en famille</h3>

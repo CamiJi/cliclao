@@ -28,7 +28,7 @@ body{
 }
 
 #main {
-	margin-top: 180px;
+	margin-top: 150px;
 }
 
 /*Source : http://www.w3schools.com/css/css_link.asp*/
@@ -86,6 +86,8 @@ footer img {
 
 
 /*Nav-Bar + Menu pays*/
+
+
 
 #rowNavBar1{
 	background-color: #DF9801;
@@ -195,7 +197,7 @@ footer img {
 
 
 #mainContainer{
-	margin-top: 50px;
+	margin-top: 200px;
 }
 
 #colMainItineraire{
