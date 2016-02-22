@@ -66,48 +66,48 @@
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'ecosse']); ?>">Ecosse</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'pays']); ?>">Pays de Galle</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'russie']); ?>">Russie</a></li>
-                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'grèce']); ?>">Grèce</a></li>
+                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'grece']); ?>">Grèce</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'croatie']); ?>">Croatie</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'portugal']); ?>">Portugal</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'irlande']); ?>">Irlande</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'bulgarie']); ?>">Bulgarie</a></li>
-                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'norvège']); ?>">Norvège</a></li> 
+                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'norvege']); ?>">Norvège</a></li> 
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'islande']); ?>">Islande</a></li>
-                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'suède']); ?>">Suède</a></li>
+                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'suede']); ?>">Suède</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'finlande']); ?>">Finlande</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'turquie']); ?>">Turquie</a></li>
                   </ul>
                   <ul class="col-md-3">
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'ameriques']); ?>" class="continentsListePays">AMERIQUES</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'argentine']); ?>">Argentine</a></li>
-                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'brésil']); ?>">Brésil </a></li>
+                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'bresil']); ?>">Brésil </a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'cuba']); ?>">Cuba</a></li>
-                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'pérou']); ?>">Pérou</a></li>
+                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'perou']); ?>">Pérou</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'bolivie']); ?>">Bolivie</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'equateur']); ?>">Equateur</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'colombie']); ?>">Colombie</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'costa']); ?>">Costa Rica</a></li>
-                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'république']); ?>">République dominicaine</a></li>
+                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'repDom']); ?>">République dominicaine</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'mexique']); ?>">Mexique </a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'guatemala']); ?>">Guatemala</a></li>
-                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'états']); ?>">États-Unis  </a></li>
+                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'usa']); ?>">États-Unis  </a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'canada']); ?>">Canada  </a></li>
                   </ul>
                   <ul class="col-md-3">
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'asie']); ?>" class="continentsListePays">ASIE</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'inde']); ?>">Inde</a></li>
-                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'indonésie']); ?>">Indonésie</a></li>
+                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'indonesie']); ?>">Indonésie</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'japon']); ?>">Japon</a></li> 
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'singapour']); ?>">Singapour</a></li>
-                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'thaïlande']); ?>">Thaïlande</a></li>
-                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'corée']); ?>">Corée du Sud</a></li>
+                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'thailande']); ?>">Thaïlande</a></li>
+                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'coree']); ?>">Corée du Sud</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'malaisie']); ?>">Malaisie</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'hong']); ?>">Hong Kong</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'chine']); ?>">Chine </a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'vietnam']); ?>">Vietnam</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'sri']); ?>">Sri Lanka</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'mongolie']); ?>">Mongolie</a></li>
-                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'népal']); ?>">Népal</a></li>
+                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'nepal']); ?>">Népal</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'birmanie']); ?>">Birmanie</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'iran']); ?>">Iran</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'laos']); ?>">Laos</a></li>
@@ -115,10 +115,10 @@
                   </ul>
                   <ul class="col-md-3">
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'afrique']); ?>" class="continentsListePays">AFRIQUE</a></li>
-                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'sénégal']); ?>">Sénégal</a></li>
+                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'senegal']); ?>">Sénégal</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'maroc']); ?>">Maroc </a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'tunisie']); ?>">Tunisie</a></li>
-                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'égypte']); ?>">Égypte</a></li>
+                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'egypte']); ?>">Égypte</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'rwanda']); ?>">Rwanda</a></li> 
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'kenya']); ?>">Kenya</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'tanzanie']); ?>">Tanzanie</a></li>
@@ -130,7 +130,7 @@
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'oceanie']); ?>" class="continentsListePays">OCEANIE</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'australie']); ?>">Australie</a></li>
                     <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'nouvelle']); ?>">Nouvelle Zélande</a></li>
-                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'polynésie']); ?>">Polynésie</a></li>
+                    <li><a href="<?= $this->url('destinationCountry' , ['country'=> 'polynesie']); ?>">Polynésie</a></li>
 
                   </ul>
                 </div> <!-- End Row Liste des pays -->

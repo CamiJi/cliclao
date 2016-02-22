@@ -12,15 +12,9 @@
             <div class="col-md-12" id="colonne1">
                 <div class="row" id="textePresentationPays">
 
-                <h2>SPÉCIALISTE DU VOYAGE AU CANADA SUR-MESURE</h2>
+                <h2>SPÉCIALISTE DU VOYAGE AU <?= $country['name'] ?> SUR-MESURE</h2>
 
-                <p>Découvrez nos suggestions de voyages au Canada entièrement personnalisables à votre rythme et selon vos envies :
-
-                UNE EXPÉRIENCE AUTHENTIQUE, UN PARTAGE, UNE RENCONTRE AVEC LE CANADA
-
-                Marco Vasco c’est avant tout une philosophie du voyage axée sur une expérience unique de la destination.
-
-                Laissez-vous tenter par un voyage original et inoubliable dans l’ouest en séjour, en autotour ou bien par le train dans l'est.</p>
+                <p><?= $country['description'] ?></p>
                   
                 </div>
                 </br>
@@ -137,7 +131,7 @@
                   Le territoire canadien dispose d’une grande variété de paysages et d’activités à vous proposer. Certains sites et activités sont cependant à privilégier en fonction de la saison. Que vous partiez en famille ou entre amis nos spécialistes Canada élaboreront un voyage sur mesure adapté à vos besoins.</p>
 
 
-                  <h3><a href="http://www.diplomatie.gouv.fr/fr/dossiers-pays/'<?= $country ?>'/">Que dit le ministère des affaires étrangères de</a></h3>
+                  <h3><a href="http://www.diplomatie.gouv.fr/fr/dossiers-pays/<?= $country['name'] ?>/" onclick="window.open(this.href); return false;">Que dit le ministère des affaires étrangères de ce pays</a></h3>
                   
                 </div>
                       

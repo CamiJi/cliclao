@@ -4,6 +4,8 @@ namespace Controller;
 
 use \W\Controller\Controller;
 
+use \Manager\CountryManager;
+
 class DestinationController extends Controller
 {
 
@@ -17,8 +19,18 @@ class DestinationController extends Controller
 
 	public function showCountry($country)
 	{
-		// $this->show('destination/showCountry');
-		echo $country;
+		// Je crée un gestionnaire 
+		$countryManager = new CountryManager();
+		// SELECT * FROM `country` WHERE `name` = $country;
+		
+		$countryManager->setTable('country');
+
+
+		$country = $countryManager->findByName($country);
+
+		// print_r($country);
+
+		$this->show('destination/showCountry',['country' => $country]);
 	}
 
 }
