@@ -31,14 +31,14 @@
                     </div>
                     <div class = "col-sm-6 col-md-4">
                       <div class="thumbnail tile tile-medium tile-teal">
-                        <a href="#" >
+                        <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
                           <h1>Voyage2</h1>
                         </a>                  
                       </div>
                     </div>
                     <div class = "col-sm-6 col-md-4">
                       <div class="thumbnail tile tile-medium tile-teal">
-                        <a href="#" >
+                        <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
                           <h1>Voyage3</h1>
                         </a>                  
                       </div>
@@ -54,21 +54,21 @@
                   <div class="row" id=ThumbnailsVoyageRow1>
                     <div class = "col-sm-6 col-md-4">
                       <div class="thumbnail tile tile-medium tile-teal">
-                        <a href="#" >
+                        <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
                           <h1>Voyage1</h1>
                         </a>                  
                       </div>
                     </div>
                     <div class = "col-sm-6 col-md-4">
                       <div class="thumbnail tile tile-medium tile-teal">
-                        <a href="#" >
+                        <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
                           <h1>Voyage2</h1>
                         </a>                  
                       </div>
                     </div>
                     <div class = "col-sm-6 col-md-4">
                       <div class="thumbnail tile tile-medium tile-teal">
-                        <a href="#" >
+                        <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
                           <h1>Voyage3</h1>
                         </a>                  
                       </div>
@@ -82,21 +82,21 @@
                   <div class="row" id=ThumbnailsVoyageRow1>
                     <div class = "col-sm-6 col-md-4">
                       <div class="thumbnail tile tile-medium tile-teal">
-                        <a href="#" >
+                        <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
                           <h1>Voyage1</h1>
                         </a>                  
                       </div>
                     </div>
                     <div class = "col-sm-6 col-md-4">
                       <div class="thumbnail tile tile-medium tile-teal">
-                        <a href="#" >
+                        <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
                           <h1>Voyage2</h1>
                         </a>                  
                       </div>
                     </div>
                     <div class = "col-sm-6 col-md-4">
                       <div class="thumbnail tile tile-medium tile-teal">
-                        <a href="#" >
+                        <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
                           <h1>Voyage3</h1>
                         </a>                  
                       </div>

@@ -47,21 +47,21 @@
             <div class="row" id=ThumbnailsRow1>
               <div class = "col-sm-6 col-md-4">
                 <div class="thumbnail tile tile-medium tile-teal">
-                  <a href="#" >
+                  <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
                     <h1>Tuile1</h1>
                   </a>                  
                 </div>
               </div>
               <div class = "col-sm-6 col-md-4">
                 <div class="thumbnail tile tile-medium tile-teal">
-                  <a href="#" >
+                  <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
                     <h1>Tuile2</h1>
                   </a>                  
                 </div>
               </div>
               <div class = "col-sm-6 col-md-4">
                 <div class="thumbnail tile tile-medium tile-teal">
-                  <a href="#" >
+                  <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
                     <h1>Tuile2</h1>
                   </a>                  
                 </div>
@@ -80,21 +80,21 @@
             <div class="row" id=ThumbnailsRow2>
               <div class = "col-sm-6 col-md-4">
                 <div class="thumbnail tile tile-medium tile-teal">
-                  <a href="#" >
+                  <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
                     <h1>Tuile4</h1>
                   </a>                  
                 </div>
               </div>
               <div class = "col-sm-6 col-md-4">
                 <div class="thumbnail tile tile-medium tile-teal">
-                  <a href="#" >
+                  <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
                     <h1>Tuile5</h1>
                   </a>                  
                 </div>
               </div>
               <div class = "col-sm-6 col-md-4">
                 <div class="thumbnail tile tile-medium tile-teal">
-                  <a href="#" >
+                  <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
                     <h1>Tuile6</h1>
                   </a>                  
                 </div>

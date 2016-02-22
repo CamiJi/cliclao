@@ -6,6 +6,8 @@ use \W\Controller\Controller;
 
 use \Manager\itManager;
 
+use \Manager\DaysManager;
+
 class ItineraireController extends Controller
 {
 
@@ -19,18 +21,16 @@ class ItineraireController extends Controller
 
 	public function showIt($id)
 		{
-			// Je crée un gestionnaire 
+			// Je crée un gestionnaire pour récupérer les données du voyage
 			$itManager = new ItManager();
-			// SELECT * FROM `country` WHERE `name` = $country;
-			
-			$itManager->setTable('voyages');
-
 
 			$it = $itManager->findByVoyageId($id);
 
-			print_r($it);
-
-			// $this->show('itineraire/showIt',['it'=>$it]);
+			$this->show('itineraire/showIt',['it' => $it ]);
 		}
 
 }
+
+			// $days = $itManager->findDaysByVoyageId($id);
+			// print_r($days);
+			// , 'days' => $days
