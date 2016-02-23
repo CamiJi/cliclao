@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'Page itineraire']) ?>
+<?php $this->layout('layout', ['title' => $it[0]['voyage_name'] ]) ?>
 
 <?php $this->start('main_content') ?>
 
@@ -10,10 +10,10 @@
               <img id="imgItineraire" src="<?= $this->assetUrl('img/vc.jpg' ) ?>">
             </div> <!-- end divImgItineraire -->
             <div id="divNomItineraire">
-              <h3><?= $it['name'] ?></h3>
+              <h3><?= $it[0]['voyage_name'] ?></h3>
             </div> <!-- End divNomItineraire  -->
             <div id="divDescriptionItineraire">
-              <p id="descriptionItineraire"><?= $it['description_voyage'] ?></p>
+              <p id="descriptionItineraire"><?= $it[0]['description_voyage'] ?></p>
             </div> <!-- End #divDescriptionItineraire -->          
           </div> <!-- End colMainItineraire -->
 
@@ -81,59 +81,33 @@
 
         <div class="row" id="rowDayByDay">
            <div class="col-xs-12 col-md-7" id="colDayByDay">
-              <h3>Descriptif du Voyage</h3>
+              <div id="descriptifTitre">
+                <h3>Descriptif du Voyage</h3>
+              </div>
 
 
-              <div id="day1" class="dayByday" >
-               <h5>Jour 1&2</h5>
-               <h4>VOL INTERNATIONAL POUR MONTRÉAL</h4>
-                <p>Arrivée à Montréal. Premières découvertes : le quartier du Plateau Mont Royal, le "village" de Montréal avec ses lofts, ses boutiques de designers, ses bars et restaurants branchés, le Vieux Port et ses promenades sans oublier la rue Ste Catherine pour le shopping. 
-                Installation dans une adresse confortable du centre-ville idéalement située à deux pas du Vieux Montréal. On aime la déco sobre et élégante, les chambres spacieuses et l'accueil chaleureux de la part du personnel.
-                A voir - Le musée de la Pointe à Callière, à l’architecture remarquable, qui raconte l'histoire de la ville sur fond d'archéologie.
-                </p>
-              </div> <!-- End of #day1  class="dayByday"-->
+<!-- Démarage de la boucle qui affiche le jour par jour. 1. Affichage du day_name 2.Affichage du bodyText -->
 
+                  <?php if(!empty($it)): ?>
+                    <?php foreach ($it as $keyVoyages => $voyage): ?>
 
+                            <div  class="dayByDay" id="day<?php echo $voyage['ordering']; ?>">
+                              <h4><?php echo $voyage['day_name']; ?></h4>
+                              <p><?php echo $voyage['bodyText']; ?></p>                  
+                            </div> <!-- rowDayByDay -->
 
-              <div id="day2" class="dayByday" >
-               <h5>Jour 2</h5>
-               <h4>MONTRÉAL - SAINT-PAULIN (130 KM )</h4>
-                <p>Prise en charge de votre location de voiture. Route pour le Parc National de la Mauricie, parsemé de lacs, couvert de forêts à perte de vue, à découvrir à pied ou en canot. À proximité de votre étape, la réserve faunique de la Mastigouche, refuge des castors et orignaux invite à la détente. 
-                Installation dans une auberge au bord d'une rivière qui mise tout sur le bien être et l'accord avec la nature. Pour votre confort : spa, yoga etc... 
-                A faire - Se lever au petit matin dans la forêt encore endormie pour observer la faune.
-                </p>
-              </div> <!-- End of #day2  class="dayByday"-->              
+                    <?php endforeach; ?>
 
-
-
-              <div id="day3" class="dayByday" >
-               <h5>Jour 3</h5>
-               <h4>SAINT-PAULIN - LAC SAINT JEAN (330 KM)</h4>
-                <p>Départ pour la région du Lac Saint Jean connue pour son parc zoologique à St Félicien. On peut y observer les espèces animales du Canada dans leur habitat naturel. Il est aussi très agréable de se balader en vélo sur la "piste cyclable des bleuets", ou de se baigner. Installation dans une jolie maison familiale lovée à fleur d'eau.
-                </p>
-              </div> <!-- End of #day3  class="dayByday"-->
+                  <?php else: ?>
+                    <div class="alert alert-danger" role="alert">
+                    <p>Désolé mais votre recherche ne retourne aucun résultat</p>
+                    </div>
+                  <?php endif; ?>
 
 
 
+<!-- Fin de la boucle affichant le jour par jour -->
 
-              <div id="day4" class="dayByday" >
-               <h5>Jour 4</h5>
-               <h4>LAC SAINT JEAN - FJORD DU SAGUENAY (145 KM)</h4>
-                <p>La route se poursuit vers le Fjord du Saguenay, l'un des plus beaux sites du Québec. Le parc des Monts-Vallins est également un régal pour les randonneurs.
-                Installation dans une pourvoirie rustique surplombant le Fjord. 
-                Pour les aventureux - Une avalanche d'activités possibles dans ce panorama spectaculaire : Parcours d'accrobranche, sorties en kayak pour approcher les bélugas...
-                </p>
-              </div> <!-- End of #day4  class="dayByday"-->
-
-
-              <div id="day5" class="dayByday" >
-               <h5>Jour 5</h5>
-               <h4>FJORD DU SAGUENAY - TADOUSSAC (140 KM)</h4>
-                <p>Route le long du fjord offrant de nombreux points de vue exceptionnels sur les falaises escarpées et les petits villages traditionnels de pêcheurs. Continuation vers Tadoussac, qui jouit d'une position privilégiée dans une des plus belles baies du monde.
-                Installation dans un gîte au cœur du village de Tadoussac. On aime - la jolie vue sur le Saint-Laurent, l'accueil chaleureux et les petits déjeuners copieux faits maison. 
-                Déjà prévue - Une croisière en zodiac pour approcher les baleines, les rorquals et les bélugas dans les eaux si vastes du St Laurent qu'on dirait la mer.
-                </p>
-              </div> <!-- End of #day5 -->
 
            </div> <!-- End of #colDayByDay -->
         </div> <!-- End of #rowDayByDay -->

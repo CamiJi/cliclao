@@ -210,7 +210,12 @@ footer img {
 
 }
 
-
+#divNomItineraire {
+	border-bottom-style: solid;
+	border-bottom-color: grey;
+	border-width: 1px;
+	margin-bottom: 20px;
+}
 
 #colCaractItineraires{
 	border-color: #DF9801;
@@ -236,9 +241,17 @@ footer img {
 	padding: 7px;
 }
 
-.dayByday {
+#descriptifTitre{
+	border-bottom-style: solid;
+	border-bottom-color: grey;
+	border-width: 1px;
+	margin-bottom: 20px;
+
+}
+.dayByDay {
 	border-bottom-style: solid;
 	border-bottom-color: grey;
 	border-width: 1px;
 	margin-bottom: 20px;
 }
+

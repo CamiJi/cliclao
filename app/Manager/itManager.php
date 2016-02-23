@@ -6,23 +6,15 @@ class itManager extends \W\Manager\Manager
 
 	public function findByVoyageId($id){
 
-		$sql = "SELECT * FROM voyages WHERE id = :id LIMIT 1";
-		$sth = $this->dbh->prepare($sql);
-		$sth->bindValue(":id", $id);
-		$sth->execute();
-
-		return $sth->fetch();
-	}
-
-
-	public function findDaysByVoyageId($id){
-
-		$sql = "SELECT * FROM days WHERE voyage_id = :id ORDER BY ordering";
+		$sql = "SELECT days.id , voyages.name as voyage_name , `description_voyage` , days.name as day_name , bodyText, ordering FROM voyages CROSS JOIN days WHERE voyage_id = :id";
 		$sth = $this->dbh->prepare($sql);
 		$sth->bindValue(":id", $id);
 		$sth->execute();
 
 		return $sth->fetchAll();
 	}
+
+
+
 
 }
