@@ -34,7 +34,26 @@
             <div class="container">
               <div class="col-md-4"><p>Voyages individuels crées par des agences locales</p></div>
               <div class="col-md-4"><a href="#">DEMANDE DE DEVIS</a></div>
-              <div class="col-md-4"><p>ESPACE CLIENT :  <a href="<?= $this->url('login'); ?>">SE CONNECTER </a> | <a href="<?= $this->url('register'); ?>">  S'INSCRIRE</a></p></div>            
+
+
+
+              <!-- Début de la logique de Connexion : si non connecté lien SeConnecter ou Inscription ; si connecté affichage de Salut $_SESSION["user"]['name'] + lien Log Out -->
+
+
+              <?php if(!empty($_SESSION)): ?>
+
+                  <div class="col-md-4"><p>Salut <?= $_SESSION['user']['name']; ?> | <a href="<?= $this->url('logoutUser'); ?>">  Déconnexion</a></p></div>
+
+              <?php else: ?>
+
+                  <div class="col-md-4"><p>ESPACE CLIENT :  <a href="<?= $this->url('login'); ?>">SE CONNECTER </a> | <a href="<?= $this->url('register'); ?>">  S'INSCRIRE</a></p></div>   
+
+              <?php endif; ?>
+
+              <!-- Fin de la logique de connexion -->
+
+
+
             </div><!--  end Container -->
           </div><!--  end navBar1Row -->
 

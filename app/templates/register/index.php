@@ -16,7 +16,13 @@
 				<?php endif; ?>
 			</div>
 
+
 			<div class="form-group">
+				<label for="name">Nom</label>
+				<input type="name" class="form-control" id="name" name="name" placeholder="Nom">
+			</div>
+
+			<div class="form-group">		
 				<label for="password">Mot de passe</label>
 				<input type="password" class="form-control" id="password" name="password" placeholder="Mot de passe">
 			</div>

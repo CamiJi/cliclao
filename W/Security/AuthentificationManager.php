@@ -1,5 +1,5 @@
 <?php
-
+ 
 namespace W\Security;
 
 use W\Security\StringUtils;

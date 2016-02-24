@@ -61,7 +61,7 @@
                 </div> <!-- End #divButtonDevis -->
 
                 <div id="divButtonFav">
-                  <button type="button" class="btn btn-default btn-block">Ajoutez aux favoris</button>
+                  <button type="button" class="btn btn-default btn-block"><i class="fa fa-heart-o"></i> Ajoutez aux favoris</button>
                 </div> <!-- End of #divButtonFav -->
 
               </div> <!-- End of #divGroupButtons -->

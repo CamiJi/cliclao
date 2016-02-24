@@ -23,6 +23,7 @@ class RegisterController extends Controller
 		debug($_POST);
 
 		$email = trim(htmlentities($_POST['email']));
+		$name = trim(htmlentities($_POST['name']));
 		$password = trim(htmlentities($_POST['password']));
 		$confirmPassword = trim(htmlentities($_POST['confirmPassword']));
 
@@ -56,6 +57,7 @@ class RegisterController extends Controller
 
 			$resultUser = $userManager->insert([
 				'email' => $email,
+				'name' => $name,
 				'password' => $hashedPassword,
 				'role' => 'member',
 				'created_at' => $date->format('Y-m-d H:i:s'),

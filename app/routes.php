@@ -10,7 +10,10 @@
 
 
 		['GET', '/login', 'Login#index', 'login'],
+
 		['POST', '/loginUser', 'Login#loginUser', 'loginUser'],
+
+		['GET', '/logout', 'Login#logoutUser', 'logoutUser'],
 
 
 		['GET', '/register', 'Register#index', 'register'],

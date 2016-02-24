@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 namespace Controller;
 
@@ -50,5 +50,16 @@ class LoginController extends Controller
 		$this->show('login/index', ['errors' => $errors]);
 
 	}
+
+
+	public function logoutUser()
+	{
+		echo "On entre dans le LoginController-> Method logoutUser ";
+		$authentificationManager = new AuthentificationManager();
+		$authentificationManager->logUserOut();
+		$this->redirectToRoute('home');
+	}
+
+
 
 }
