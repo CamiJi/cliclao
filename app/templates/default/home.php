@@ -16,13 +16,18 @@
                 </div>
                 <div class="row">
                   <div class="col-md-6 col-md-offset-3">
-                    <div class="input-group">
-                      <span class="input-group-btn" for="go">
-                        <button class="btn btn-default" type="button" name="go" id="go">Go!</button>
+                    <div class = "input-group">
+               
+                      <span class = "input-group-btn">
+                        <button class = "btn btn-default" type = "button">
+                          Go!
+                        </button>
                       </span>
-                      <input type="text" class="form-control" placeholder="Dans quel pays désirez-vous voyager?">
+            
+                      <input type = "text" class = "form-control">
+               
                     </div><!-- /input-group -->
-                  </div>
+                  </div> <!-- End of .col-md-6 col-md-offset-3 -->
                 </div>
 
               </div>

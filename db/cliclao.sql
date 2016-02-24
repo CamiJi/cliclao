@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Mar 23 Février 2016 à 17:45
+-- Généré le :  Mer 24 Février 2016 à 16:57
 -- Version du serveur :  5.6.25
 -- Version de PHP :  5.6.11
 
@@ -116,12 +116,27 @@ INSERT INTO `themes` (`id`, `name`, `created_at`, `updated_at`) VALUES
 
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL,
+  `role` varchar(15) NOT NULL,
   `name` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `users`
+--
+
+INSERT INTO `users` (`id`, `role`, `name`, `email`, `password`, `created_at`, `updated_at`) VALUES
+(1, 'member', NULL, 'roberto.delaVega@hotmail.com', '$2y$10$CGlIPqubqwiNONIbnk5GnO9hzi709fGPlIbkEGqURp5k2Ae4SIqgu', '2016-02-24 12:51:19', '2016-02-24 12:51:19'),
+(2, 'member', NULL, 'az@az.com', '$2y$10$CDUtnhKP1Qcdsm9NsaGiL.ynu5QoqwMpu8/w7AgixjUZRLtXr5xxG', '2016-02-24 12:54:41', '2016-02-24 12:54:41'),
+(3, 'member', NULL, 'rt@rt.com', '$2y$10$MRJVkLaw.3apzNaoq7.pzuSg9fg558sgMXD1FW9gPqKArfTZ7Ani2', '2016-02-24 13:02:22', '2016-02-24 13:02:22'),
+(4, 'member', 'xc', 'xc@xc.com', '$2y$10$8riYGSSvI1mj4rf.nzFLou4RGn7.gT0R1SGYcMTCtEygOWP4faUjy', '2016-02-24 14:20:00', '2016-02-24 14:20:00'),
+(5, 'member', 'aq', 'aq@aq.com', '$2y$10$OsqwOcBKKLdyiVvQxwtoIu.HgGyRc9RqVt6GRip8KqXjDVp3lihYK', '2016-02-24 14:56:36', '2016-02-24 14:56:36'),
+(6, 'member', 'qs', 'qs@qs.com', '$2y$10$OZin8wk7yCuLq38vC9mi4enfyl8JGky7atLNPRNEeTK7SBZGCYJBC', '2016-02-24 15:39:00', '2016-02-24 15:39:00'),
+(7, 'member', 'cam', 'cam@cam.com', '$2y$10$rTxfWb6O/7Ok.29RPthahe9hprVupJloBUHOwERtk9OqeLn0yqbwi', '2016-02-24 16:05:15', '2016-02-24 16:05:15'),
+(8, 'member', 'w', 'w@w.com', '$2y$10$N30lP6nAwwHoLiOnitqVbuuV5ymAtQdZnflJlnoSTbzVFtzkqfTq6', '2016-02-24 16:38:12', '2016-02-24 16:38:12');
 
 -- --------------------------------------------------------
 
@@ -148,7 +163,7 @@ CREATE TABLE IF NOT EXISTS `voyages` (
 --
 
 INSERT INTO `voyages` (`id`, `date`, `budget`, `difficulte`, `name`, `description_voyage`, `updated_at`, `created_at`, `theme_id_id`, `country_id`, `comments_id`) VALUES
-(1, NULL, 3, 3, 'Québec et Montréal en duo', 'Ce séjour au Québec vous emmène sur le chemin du Roy, la plus ancienne route terrestre du Canada, reliant les villes les plus animées du pays : Montréal, Trois-Rivières et Québec. Commencez par la métropole américaine de Montréal, découvrez le mariage des quartiers anciens aux petites maisons colorées et des gratte-ciel typiquement américains. Puis faites la connaissance de Trois-Rivières, élue capitale culturelle du pays en 2009. En suivant le chemin du Roy, vous pourrez contempler le riche patrimoine de la Nouvelle-France qui longe le fleuve Saint-Laurent. Enfin, Québec saura vous séduire par son charme pittoresque, sa gastronomie et sa joie de vivre.', NULL, NULL, 2, 1, NULL);
+(1, NULL, 659, 3, 'Québec et Montréal en duo', 'Ce séjour au Québec vous emmène sur le chemin du Roy, la plus ancienne route terrestre du Canada, reliant les villes les plus animées du pays : Montréal, Trois-Rivières et Québec. Commencez par la métropole américaine de Montréal, découvrez le mariage des quartiers anciens aux petites maisons colorées et des gratte-ciel typiquement américains. Puis faites la connaissance de Trois-Rivières, élue capitale culturelle du pays en 2009. En suivant le chemin du Roy, vous pourrez contempler le riche patrimoine de la Nouvelle-France qui longe le fleuve Saint-Laurent. Enfin, Québec saura vous séduire par son charme pittoresque, sa gastronomie et sa joie de vivre.', NULL, NULL, 2, 1, NULL);
 
 --
 -- Index pour les tables exportées
@@ -221,7 +236,7 @@ ALTER TABLE `themes`
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT pour la table `voyages`
 --

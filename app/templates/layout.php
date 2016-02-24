@@ -42,7 +42,7 @@
 
               <?php if(!empty($_SESSION)): ?>
 
-                  <div class="col-md-4"><p>Salut <?= $_SESSION['user']['name']; ?> | <a href="<?= $this->url('logoutUser'); ?>">  Déconnexion</a></p></div>
+                  <div class="col-md-4"><p>Salut <?= $_SESSION['user']['name']; ?>   |   <a href="<?= $this->url('logoutUser'); ?>">  Déconnexion</a></p></div>
 
               <?php else: ?>
 
