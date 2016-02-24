@@ -34,7 +34,7 @@
             <div class="container">
               <div class="col-md-4"><p>Voyages individuels crées par des agences locales</p></div>
               <div class="col-md-4"><a href="#">DEMANDE DE DEVIS</a></div>
-              <div class="col-md-4"><p>ESPACE CLIENT :  <a href="#">SE CONNECTER </a> | <a href="#">  S'INSCRIRE</a></p></div>            
+              <div class="col-md-4"><p>ESPACE CLIENT :  <a href="<?= $this->url('login'); ?>">SE CONNECTER </a> | <a href="<?= $this->url('register'); ?>">  S'INSCRIRE</a></p></div>            
             </div><!--  end Container -->
           </div><!--  end navBar1Row -->
 
