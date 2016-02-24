@@ -18,26 +18,17 @@
           </div> <!-- End colMainItineraire -->
 
 
-
-
-
-
-
-
-
-
-
           <div class="col-xs-6 col-md-4" id="colCaractItineraires">
             <div id="divCaracteristiquesItineraire">
               <div id="divContainerCaractItineraire" class="container">
                 <div id="divCaracteristiquesSql" class="row">
                   <div id="divPrixItineraire" class="col-md-1">
                     <h4>Prix:</h4>
-                    <p id="prixItineraire">à partir de <b>659 € </b>par personne</p>
+                    <p id="prixItineraire"><?= $it[0]['budget'] ?> € / Personne</p>
                   </div> <!-- End#divPrixItineraire -->
 
                   <div id="divDifficulteItineraire" class="col-md-1">
-                    <h4 id="difficulteItineraire">Niveau de Difficulté : </h4>
+                    <h4 id="difficulteItineraire">Difficulté: </h4>
                     <i class="fa fa-hand-scissors-o"></i>
                     <i class="fa fa-hand-scissors-o"></i>
                     <i class="fa fa-hand-scissors-o"></i>                  
@@ -45,7 +36,7 @@
                   </div> <!-- End#divDifficulteItineraire -->
 
                   <div id="divThemesItineraire" class="col-md-2">
-                    <h4>Le voyage correspond aux thèmes suivants:</h4>
+                    <h4>Thème du voyage:</h4>
                     <i class="fa fa-anchor"></i>
                     <i class="fa fa-car"></i>
                     <i class="fa fa-ship"></i>
