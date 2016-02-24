@@ -32,6 +32,8 @@
 
 
 			<button type="submit" class="btn btn-primary" id="loginButton">Connexion</button>
+
+			<p id="forgotPassword"><a href="" >Mot de passe oublié?</a></p>
 		</form>
 	</div>
 </div>
