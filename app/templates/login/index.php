@@ -2,9 +2,12 @@
 
 <?php $this->start('main_content') ?>
 
-<div class="row">
+<div class="row" id="formLogin">
 	<div class="col-md-6 col-md-offset-3">
 
+		<div>
+		<h2 class="col-md-6 col-md-offset-3">Connectez-vous!</h2>
+		</div>
 
 		<?php if (isset($errors['login'])): ?>
 			<div class="alert alert-danger">
@@ -12,9 +15,10 @@
 			</div>
 		<?php endif; ?>
 
-		<h2 class="col-md-6 col-md-offset-3">Connectez-vous!</h2>
 
-		<form action="<?= $this->url('loginUser');?>" class="form-container" method="POST">
+
+		<form action="<?= $this->url('loginUser');?>" class="form-container col-md-6 col-md-offset-3" method="POST">
+
 
 			<div class="form-group">
 				<label for="email">Email</label>
@@ -26,7 +30,8 @@
 				<input type="password" class="form-control" id="password" name="password" placeholder="password">
 			</div>
 
-			<button type="submit" class="btn btn-primary">Connexion</button>
+
+			<button type="submit" class="btn btn-primary" id="loginButton">Connexion</button>
 		</form>
 	</div>
 </div>

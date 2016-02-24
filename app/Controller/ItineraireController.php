@@ -24,7 +24,7 @@ class ItineraireController extends Controller
 			$it = $itManager->findByVoyageId($id);
 
 			
-		
+			// print_r($it);
 			$this->show('itineraire/showIt',['it' => $it]);
 		}
 

@@ -255,3 +255,18 @@ footer img {
 	margin-bottom: 20px;
 }
 
+/* Page Formulaire Login  */
+
+#formLogin {
+	margin-top: 200px;
+	margin-bottom: 150px;
+}
+
+
+
+/*Page Formulaire Register*/
+
+#rowFormRegister {
+	margin-top: 200px;
+	margin-bottom: 100px;
+}
