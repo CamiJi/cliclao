@@ -36,7 +36,7 @@ class LoginController extends Controller
 			if ($authentificationManager->isValidLoginInfo($email, $password)) {
 				$authentificationManager->logUserIn($resultUser);
 
-				$this->redirectToRoute('privateHome');
+				$this->redirectToRoute('home');
 			}
 			else{
 				$errors['login'] = "Mauvais mot de passe ";

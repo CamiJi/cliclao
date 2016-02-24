@@ -4,9 +4,6 @@
 <div class="row" id="rowFormRegister">
 	<div class="col-md-6 col-md-offset-3">
 
-
-
-
 		<div>
 			<h2 class="col-md-6 col-md-offset-3">Formulaire d'inscription</h2>
 		</div>

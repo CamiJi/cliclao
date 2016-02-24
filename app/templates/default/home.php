@@ -17,8 +17,8 @@
                 <div class="row">
                   <div class="col-md-6 col-md-offset-3">
                     <div class="input-group">
-                      <span class="input-group-btn">
-                        <button class="btn btn-default" type="button">Go!</button>
+                      <span class="input-group-btn" for="go">
+                        <button class="btn btn-default" type="button" name="go" id="go">Go!</button>
                       </span>
                       <input type="text" class="form-control" placeholder="Dans quel pays désirez-vous voyager?">
                     </div><!-- /input-group -->

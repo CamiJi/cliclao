@@ -66,7 +66,7 @@ class RegisterController extends Controller
 			if ($resultUser) {
 				$authentificationManager = new AuthentificationManager();
 				$authentificationManager->logUserIn($resultUser);
-				$this->redirectToRoute('privateHome');
+				$this->redirectToRoute('home');
 			}
 			
 		}

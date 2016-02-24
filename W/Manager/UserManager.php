@@ -33,7 +33,7 @@ class UserManager extends Manager
 		}
 
 		return false;
-	}
+	} 
 
 	/**
 	* Teste si un email est présent en base de données
