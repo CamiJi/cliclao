@@ -13,7 +13,7 @@
 			<div class="alert alert-danger col-md-6 col-md-offset-3">
 				<p><?= $errors['login']?></p>
 			</div>
-		<?php endif; ?>
+		<?php endif; ?> 
 
 
 

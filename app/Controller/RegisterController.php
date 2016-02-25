@@ -68,6 +68,7 @@ class RegisterController extends Controller
 			if ($resultUser) {
 				$authentificationManager = new AuthentificationManager();
 				$authentificationManager->logUserIn($resultUser);
+				// print_r($_POST);
 				$this->redirectToRoute('home');
 			}
 			

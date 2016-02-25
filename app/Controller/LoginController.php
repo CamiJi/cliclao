@@ -1,5 +1,5 @@
 <?php 
-
+ 
 namespace Controller;
 
 use \W\Controller\Controller;
@@ -29,6 +29,9 @@ class LoginController extends Controller
 		$userManager->setTable('users');
 
 		$resultUser = $userManager->getUserByUsernameOrEmail($email);
+		
+		// debug($resultUser);
+		// die();
 
 		if ($resultUser) {
 
@@ -44,8 +47,10 @@ class LoginController extends Controller
 			
 		}
 		else {
+			
 			$errors['login'] = "Cette adresse email n'existe pas";
 		}
+
 
 		$this->show('login/index', ['errors' => $errors]);
 
