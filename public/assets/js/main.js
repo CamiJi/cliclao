@@ -34,4 +34,12 @@ $( document ).ready(function() {
 
 
 
+
+
+
+
+
+// chargement de Fancybox
+	$('.fancybox').fancybox();
+
 });

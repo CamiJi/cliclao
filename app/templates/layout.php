@@ -12,10 +12,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
+
         <link rel="stylesheet" href= "<?= $this->assetUrl('css/bootstrap.min.css') ?>">
         <link rel="stylesheet" href="<?= $this->assetUrl('css/bootstrap-theme.min.css') ?>">
         <!-- Chargement de FontAwesome https://fortawesome.github.io/Font-Awesome/get-started/ -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!-- chargement du graphisme de Fancybox -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
         <link rel="stylesheet" href="<?= $this->assetUrl('css/main.css') ?>">
 
         <script src="<?= $this->assetUrl('js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') ?>"></script>
@@ -42,7 +45,7 @@
 
               <?php if(!empty($_SESSION)): ?>
 
-                  <div class="col-md-4"><p>Salut <?= $_SESSION['user']['name']; ?>   |   <a href="<?= $this->url('logoutUser'); ?>">  Déconnexion</a></p></div>
+                  <div class="col-md-4"><p>Salut <?= $_SESSION['user']['name']; ?>   |  <a href="<?= $this->url('addTravel'); ?>">PROPOSER UN VOYAGE</a>  |  <a href="<?= $this->url('logoutUser'); ?>">  Déconnexion</a>   |   </p></div>
 
               <?php else: ?>
 
@@ -212,6 +215,9 @@
         <script src="<?= $this->assetUrl('js/vendor/bootstrap.min.js') ?>"></script>
 
         <script src="<?= $this->assetUrl('js/main.js') ?>"></script>
+        
+        <!-- chargement de Fancybox -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
 
     </body>
 </html>
