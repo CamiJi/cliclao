@@ -15,12 +15,16 @@
 
         <link rel="stylesheet" href= "<?= $this->assetUrl('css/bootstrap.min.css') ?>">
         <link rel="stylesheet" href="<?= $this->assetUrl('css/bootstrap-theme.min.css') ?>">
+        
         <!-- Chargement de FontAwesome https://fortawesome.github.io/Font-Awesome/get-started/ -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
         <!-- chargement du graphisme de Fancybox -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
         <link rel="stylesheet" href="<?= $this->assetUrl('css/main.css') ?>">
 
+        <!-- chargement du mapping des drapeaux -->
+        <link rel="stylesheet" href="<?= $this->assetUrl('css/flags.css') ?>">
         <script src="<?= $this->assetUrl('js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') ?>"></script>
     </head>
     <body>
@@ -218,6 +222,10 @@
         
         <!-- chargement de Fancybox -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+
+        <!-- mon country-picker -->
+        <script src="<?= $this->assetUrl('js/countries.js') ?>"></script> <!-- les données -->
+        <script src="<?= $this->assetUrl('js/country-picker.js') ?>"></script> <!-- la logique -->
 
     </body>
 </html>

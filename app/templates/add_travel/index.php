@@ -2,10 +2,10 @@
 
 <?php $this->start('main_content') ?>
 <div class="row" id="rowFormAddtravel">
-	<div class="col-md-6 col-md-offset-3">
+	<div class="col-md-8 col-md-offset-2">
 
 		<div>
-			<h2 class="col-md-6 col-md-offset-3">Ajouter un nouveau voyage!</h2>
+			<h2 class="col-md-8 col-md-offset-3">Ajouter un nouveau voyage!</h2>
 		</div>
 
 
@@ -25,6 +25,16 @@
 					<input type="number" class="form-control" id="travelPrice" name="travelPrice" placeholder="Prix du voyage par personne en €">
 				</div>
 			</div>
+
+
+            <!-- pays du voyage -->
+            <!-- norme ISO 3166 a2 (2 caractères alpha) -->
+            <div class="form-group" id="divCountryTravel">
+                <label id="labCountryTravelId" for="countryTravelId">Pays :</label>
+                <img id="drapeauId" src="<?= $this->assetUrl('img/blank.png')?>" class="flag" alt="">
+                <select id="countryTravelId" name="countryTravel" class="selectpicker">
+                </select>
+            </div>
 
 			<div class="form-group">
 				<label for="travelDescription">Description du voyage (min 500 caractères)</label>

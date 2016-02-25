@@ -33,13 +33,36 @@ $( document ).ready(function() {
 	);
 
 
-
-
-
-
-
-
 // chargement de Fancybox
 	$('.fancybox').fancybox();
+
+
+
+
+
+// **************************************************************
+// Chargement de la logique de liste de pays + drapeau affilié
+// **************************************************************
+
+var $countryTravel = $('#countryTravelId');
+var $drapeau = $('#drapeauId');
+
+// je charge la liste des pays
+chargerOptions( $countryTravel );
+
+// gestion du changement de pays
+$countryTravel.change(function(){
+	var codePays = $(this).val(); // var codePays = this.value;
+	console.log('le pays a changé : ' + codePays);
+
+	// les drapeaux vont être modifiés
+	// selon la sélection de l'internaute
+	ajusterDrapeauAvecPays( $drapeau, $countryTravel );
+
+});
+
+
+
+// **************************************************************
 
 });
