@@ -21,6 +21,7 @@
 
         <!-- chargement du graphisme de Fancybox -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+ 
         <link rel="stylesheet" href="<?= $this->assetUrl('css/main.css') ?>">
 
         <!-- chargement du mapping des drapeaux -->
