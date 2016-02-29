@@ -14,14 +14,17 @@
 		<form action="<?= $this->url('addTravelUser') ; ?>" enctype="multipart/form-data" method="POST" class="form-container col-md-6 col-md-offset-3">
 			
 		<?php if (isset($admission)): ?>
-
 			<p class="bg-success">Votre voyage a bien été enregistré, merci !</p> 
-
 		<?php endif; ?>
 
 			<div class="form-group">
 				<label for="travelName">Nom du voyage</label>
 				<input type="text" class="form-control" id="travelName" name="travelName" placeholder="Nom du voyage">
+	
+				<?php if (isset($errors['travelName'])): ?>
+					<?= $errors['travelName'] ?>
+				<?php endif; ?>
+
 			</div>
 
 			<div class="form-group">
@@ -29,6 +32,12 @@
 				<div class="input-group">
   					<span class="input-group-addon"> € </span>
 					<input type="number" class="form-control" id="travelPrice" name="travelPrice" placeholder="Prix du voyage par personne en €">
+
+				<?php if (isset($errors['travelPrice'])): ?>
+					<?= $errors['travelPrice'] ?>
+				<?php endif; ?>
+
+
 				</div>
 			</div>
 
@@ -40,12 +49,22 @@
                 <div class="input-group">
                 	<span class="input-group-addon" id="spanFlagId"><img id="drapeauId" src="<?= $this->assetUrl('img/blank.png')?>" class="flag" alt=""></span>              
                 	<select id="countryTravelId" name="countryTravel" class="form-control"></select>
+
+					<?php if (isset($errors['countryTravel'])): ?>
+						<?= $errors['countryTravel']; ?>
+					<?php endif; ?>
+
                 </div>
             </div>
 
 			<div class="form-group">
 				<label for="travelDescription">Description du voyage (min 500 caractères)</label>
 				<textarea rows="10" class="form-control" id="travelDescription" name="travelDescription" placeholder="Description du voyage"></textarea>
+				
+				<?php if (isset($errors['travelDescription'])): ?>
+					<?= $errors['travelDescription'] ?>
+				<?php endif; ?>
+
 			</div>
 
 
@@ -60,12 +79,29 @@
 			    <label for="phototravel">Ajouter une photo à ce voyage</label>
 			    <input type="file" id="photoTravel" name="photoTravel" >
 			    <p class="help-block">L'image doit être inférieure à 1 Mo, sinon elle ne sera pas traité. Extension acceptées *.jpg, *.png, *.gif</p>
+
+					<?php if (isset($errors['photoName'])): ?>
+						<?= $errors['photoName']; ?>
+					<?php endif; ?>
+					<?php if (isset($errors['photoSize'])): ?>
+						<?= $errors['photoSize']; ?>
+					<?php endif; ?>
+					<?php if (isset($errors['photoType'])): ?>
+						<?= $errors['photoType']; ?>
+					<?php endif; ?>
+
+
 			</div>
 
 			  <div class="checkbox">
 			    <label>
-			      <input type="checkbox" value="check"> J'ai lu et j'accepte les <a href="<?= $this->assetUrl('img/logo_cliclao-v1.png') ?>" class="fancybox">CGU</a> concernant le voyage que je propose.
+			      <input type="checkbox" value="check" name="cgu"> J'ai lu et j'accepte les <a href="" class="fancybox">CGU</a> concernant le voyage que je propose.
 			    </label>
+
+					<?php if (isset($errors['travelCGU'])): ?>
+						<?= $errors['travelCGU'] ?>
+					<?php endif; ?>
+
 			  </div>
 
 	

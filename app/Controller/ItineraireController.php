@@ -1,6 +1,6 @@
 <?php
 
-namespace Controller;
+namespace Controller; 
 
 use \W\Controller\Controller;
 
@@ -21,11 +21,16 @@ class ItineraireController extends Controller
 		{
 			// Je crée un gestionnaire pour récupérer les données du voyage
 			$itManager = new ItManager();
+
 			$it = $itManager->findByVoyageId($id);
+
+			$days = $itManager->findDaysByVoyageId($id);
+
+
 
 			
 			// print_r($it);
-			$this->show('itineraire/showIt',['it' => $it]);
+			$this->show('itineraire/showIt',['it' => $it, 'days' => $days ]);
 		}
 
 }

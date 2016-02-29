@@ -46,6 +46,7 @@ class AddtravelController extends Controller
 		$countryTravel = trim(htmlentities($_POST['countryTravel']));
 		$travelDescription = trim(htmlentities($_POST['travelDescription']));
 		$travelDifficulty = trim(htmlentities($_POST['diff']));
+		$travelCgu = trim(htmlentities($_POST['cgu']));
 
 		$travelOwnerId = trim(htmlentities($_SESSION['user']['id']));
 
@@ -91,20 +92,26 @@ class AddtravelController extends Controller
 
 			// 5.3 on vérifie le pays
 		if(empty($countryTravel)) {
-			$errors['countryTravel']= "<span class='bg-danger'>Le pays du voyage est obligatoire !</span>";
+			$errors['countryTravel'] = "<span class='bg-danger'>Le pays du voyage est obligatoire !</span>";
 		}
 
 			// 5.4 On vérifie la description
 		if(empty($travelDescription)) {
-			$errors['travelDescription']= "<span class='bg-danger'>Le prix du voyage est obligatoire !</span>";
+			$errors['travelDescription']= "<span class='bg-danger'>La description du voyage est obligatoire !</span>";
 		}
 		elseif(strlen($travelDescription) < 500 || strlen($travelDescription) > 1000) {
 			$errors['travelDescription'] = "<span class='bg-danger'> La description du voyage doit être de 500 à 1000 caractères ! </span>" ;
 		}
 
 
+			// 5.5 On vérifie les CGU
+		if($travelCgu !== "check") {
+			$errors['travelCGU']= "<span class='bg-danger'>Les CGU doivent être lues et cochées !</span>";
+		}
 
-			// 5.5 On vérifie la photo
+
+
+			// 5.6 On vérifie la photo
 		if(empty($nomPhoto)) {
 			$errors['photoName'] = "<span class='bg-danger'>Une photo est obligatoire !</span>";
 		}
@@ -116,7 +123,7 @@ class AddtravelController extends Controller
 			$errors['photoType'] = "<span class='bg-danger'>Seuls les fichiers Jpeg, Png et Gif sont acceptés!</span>";
 		}
 		elseif($uploadFilesSize > 10000000) {
-			$errors['photoSize'];
+			$errors['photoSize'] = "<span class='bg-danger'>L'image ne doit pas dépasser 10 Mo !</span>";;
 		}
 
 
