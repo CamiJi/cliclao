@@ -1,16 +1,16 @@
 <?php $this->layout('layout', ['title' => $it[0]['voyage_name'] ]) ?>
-
+ 
 <?php $this->start('main_content') ?>
-
+  
       <div class="container" id="mainContainer">
         <div class="row">
 
           <div class="col-xs-12 col-md-7" id="colMainItineraire">
             <div id="divImgItineraire">
-              <img id="imgItineraire" src="/uploads/<?= $it[0]['img'] ?>">
+              <img id="imgItineraire" src="../../uploads/<?= $it[0]['img_voyage'] ?>">
             </div> <!-- end divImgItineraire -->
             <div id="divNomItineraire">
-              <h3><?= $it[0]['voyage_name'] ?></h3>
+              <h3><?= $it[0]['name'] ?></h3>
             </div> <!-- End divNomItineraire  -->
             <div id="divDescriptionItineraire">
               <p id="descriptionItineraire"><?= $it[0]['description_voyage'] ?></p>
@@ -79,11 +79,11 @@
 
 <!-- Démarage de la boucle qui affiche le jour par jour. 1. Affichage du day_name 2.Affichage du bodyText -->
 
-                  <?php if(!empty($it)): ?>
-                    <?php foreach ($it as $keyVoyages => $voyage): ?>
+                  <?php if(!empty($days)): ?>
+                    <?php foreach ($days as $keyVoyages => $voyage): ?>
 
                             <div  class="dayByDay" id="day<?php echo $voyage['ordering']; ?>">
-                              <h4><?php echo $voyage['day_name']; ?></h4>
+                              <h4><?php echo $voyage['name']; ?></h4>
                               <p><?php echo $voyage['bodyText']; ?></p>                  
                             </div> <!-- rowDayByDay -->
 
