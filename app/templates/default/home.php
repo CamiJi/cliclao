@@ -4,38 +4,61 @@
 
 
   <!-- Start Row Video -->
-            <div class="row" id="rowSearch">
-              <!-- TODO intgrer un background video -->
-              
+  
+  	<!-- TODO intgrer un background video -->
 
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6 col-md-offset-3" id="slogan">
-                   <h1>Créer votre voyage sur mesure avec une agence locale</h1>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6 col-md-offset-3">
-                    <div class = "input-group">
-               
-                      <span class = "input-group-btn">
-                        <button class = "btn btn-default" type = "button">
-                          Go!
-                        </button>
-                      </span>
-            
-                      <input type = "text" class = "form-control">
-               
-                    </div><!-- /input-group -->
-                  </div> <!-- End of .col-md-6 col-md-offset-3 -->
-                </div>
-
-              </div>
-              <!-- glyphicon glyphicon-search pour l'input -->
+  	<div id="carrousel">
+  		<div id="slide1" class="slide">
+  			<div class="visu">
+  			<img src="../public/assets/img/home-premier-voyage-1980x450_0.jpg">
+  			</div>
+  		</div>
+  		<div id="slide2" class="slide">
+  			<div class="visu">
+  			<img src="../public/assets/img/home-thematiques-1980x4502_2.jpg">
+  			</div>
+  		</div>
+  		<div id="slide3" class="slide">
+  			<div class="visu">
+  			<img src="../public/assets/img/home-tous-nos-voyages-ete-au-canada-1980x450.jpg">
+  			</div>
+  		</div>
+  		<div id="slide4" class="slide">
+  			<div class="visu">
+  			<img src="../public/assets/img/home-voyage-sur-mesure2-1980x450.jpg">
+  			</div>
+  		</div>
+  	
 
 
+  	<div class="container">
+  		<div class="row" id="titleSearch">
+  			<div class="col-md-6 col-md-offset-3" id="slogan">
+  				<h1>Créer votre voyage sur mesure avec une agence locale</h1>
+  			</div>
+  		</div>
+  		<div class="row" id="buttonSearch">
+  			<div class="col-md-6 col-md-offset-3">
+  				<div class = "input-group">
 
-            </div> <!-- End rowVideo -->
+  					<span class = "input-group-btn">
+  						<button class = "btn btn-default" type = "button" id="buttonGo">
+  							Go!
+  						</button>
+  					</span>
+
+  					<input type = "text" class = "form-control">
+
+  				</div><!-- /input-group -->
+  			</div> <!-- End of .col-md-6 col-md-offset-3 -->
+  		</div>
+
+  	</div>
+  	<!-- glyphicon glyphicon-search pour l'input -->
+
+
+
+  </div> <!-- End rowVideo -->
 
 
 

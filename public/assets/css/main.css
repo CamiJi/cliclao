@@ -158,14 +158,36 @@ footer img {
 
 
 
-#rowSearch {
-	margin-bottom: 50px;
-	padding-top: 50px;
-	height: 400px;
-	background-image: url(../img/home-voyage-sur-mesure2-1980x450.jpg);
- 
+#carrousel {
+
+	width: 100% - 5px;
+	height: 450px;
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 5px;
+
 }
 
+.visu img{
+	width: 100%;
+	height: 440px;
+}
+
+#titleSearch {
+	position: absolute;
+	top: 50px;
+	left: 450px;
+}
+
+#buttonSearch {
+	position: absolute;
+	top: 250px;
+	width: 65em;
+	left: 485px;
+}
+#buttonGo {
+	top: -5px;
+}
 #slogan {
 
 	color: white;
