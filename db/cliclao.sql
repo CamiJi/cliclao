@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Mer 24 Février 2016 à 16:57
+-- Généré le :  Lun 29 Février 2016 à 11:03
 -- Version du serveur :  5.6.25
 -- Version de PHP :  5.6.11
 
@@ -87,30 +87,6 @@ INSERT INTO `days` (`id`, `name`, `bodyText`, `img`, `ordering`, `town`, `lat`, 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `themes`
---
-
-CREATE TABLE IF NOT EXISTS `themes` (
-  `id` int(11) NOT NULL,
-  `name` varchar(45) DEFAULT NULL,
-  `created_at` datetime DEFAULT NULL,
-  `updated_at` datetime DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
-
---
--- Contenu de la table `themes`
---
-
-INSERT INTO `themes` (`id`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'trekking', NULL, NULL),
-(2, 'famille', NULL, NULL),
-(3, 'voiture', NULL, NULL),
-(4, 'bateau', NULL, NULL),
-(5, 'lune de miel', NULL, NULL);
-
--- --------------------------------------------------------
-
---
 -- Structure de la table `users`
 --
 
@@ -122,7 +98,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `password` varchar(255) DEFAULT NULL,
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `users`
@@ -136,7 +112,11 @@ INSERT INTO `users` (`id`, `role`, `name`, `email`, `password`, `created_at`, `u
 (5, 'member', 'aq', 'aq@aq.com', '$2y$10$OsqwOcBKKLdyiVvQxwtoIu.HgGyRc9RqVt6GRip8KqXjDVp3lihYK', '2016-02-24 14:56:36', '2016-02-24 14:56:36'),
 (6, 'member', 'qs', 'qs@qs.com', '$2y$10$OZin8wk7yCuLq38vC9mi4enfyl8JGky7atLNPRNEeTK7SBZGCYJBC', '2016-02-24 15:39:00', '2016-02-24 15:39:00'),
 (7, 'member', 'cam', 'cam@cam.com', '$2y$10$rTxfWb6O/7Ok.29RPthahe9hprVupJloBUHOwERtk9OqeLn0yqbwi', '2016-02-24 16:05:15', '2016-02-24 16:05:15'),
-(8, 'member', 'w', 'w@w.com', '$2y$10$N30lP6nAwwHoLiOnitqVbuuV5ymAtQdZnflJlnoSTbzVFtzkqfTq6', '2016-02-24 16:38:12', '2016-02-24 16:38:12');
+(8, 'member', 'w', 'w@w.com', '$2y$10$N30lP6nAwwHoLiOnitqVbuuV5ymAtQdZnflJlnoSTbzVFtzkqfTq6', '2016-02-24 16:38:12', '2016-02-24 16:38:12'),
+(9, 'member', 'ol', 'ol@ol.com', '$2y$10$9SwF.zkduyLiiHEfGrlqpuA9xZygTdYr687uWbDzLLSRK44vQ4xCe', '2016-02-25 11:27:36', '2016-02-25 11:27:36'),
+(10, 'member', 'op', 'op@op.com', '$2y$10$YueC6Bqt5kGVeaJV70Io2ezVwC3GJMsbI0SKsWoehplAdve9dht4C', '2016-02-25 11:28:32', '2016-02-25 11:28:32'),
+(11, 'member', 'pmpmpm', 'pm@pm.com', '$2y$10$nOIimX1zpoyFjqNugfyB/OgZN4wXxqjQFWDY1OA15Wkn2q1eKpxJ2', '2016-02-25 11:30:13', '2016-02-25 11:30:13'),
+(12, 'member', 'tg', 'tg@tg.com', '$2y$10$vFsQE2btSo.BBhgGoXwcb.CSCuv5Q71jCEjChOaZXPXfIMqZdPEBa', '2016-02-25 11:33:51', '2016-02-25 11:33:51');
 
 -- --------------------------------------------------------
 
@@ -151,19 +131,39 @@ CREATE TABLE IF NOT EXISTS `voyages` (
   `difficulte` int(11) DEFAULT NULL,
   `name` varchar(45) DEFAULT NULL,
   `description_voyage` longtext NOT NULL,
+  `img_voyage` varchar(255) NOT NULL,
   `updated_at` datetime DEFAULT NULL,
   `created_at` datetime DEFAULT NULL,
-  `theme_id_id` int(11) NOT NULL,
-  `country_id` int(11) DEFAULT NULL,
+  `user_id` int(11) NOT NULL,
+  `country_id` varchar(11) DEFAULT NULL,
   `comments_id` int(11) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `voyages`
 --
 
-INSERT INTO `voyages` (`id`, `date`, `budget`, `difficulte`, `name`, `description_voyage`, `updated_at`, `created_at`, `theme_id_id`, `country_id`, `comments_id`) VALUES
-(1, NULL, 659, 3, 'Québec et Montréal en duo', 'Ce séjour au Québec vous emmène sur le chemin du Roy, la plus ancienne route terrestre du Canada, reliant les villes les plus animées du pays : Montréal, Trois-Rivières et Québec. Commencez par la métropole américaine de Montréal, découvrez le mariage des quartiers anciens aux petites maisons colorées et des gratte-ciel typiquement américains. Puis faites la connaissance de Trois-Rivières, élue capitale culturelle du pays en 2009. En suivant le chemin du Roy, vous pourrez contempler le riche patrimoine de la Nouvelle-France qui longe le fleuve Saint-Laurent. Enfin, Québec saura vous séduire par son charme pittoresque, sa gastronomie et sa joie de vivre.', NULL, NULL, 2, 1, NULL);
+INSERT INTO `voyages` (`id`, `date`, `budget`, `difficulte`, `name`, `description_voyage`, `img_voyage`, `updated_at`, `created_at`, `user_id`, `country_id`, `comments_id`) VALUES
+(1, NULL, 659, 3, 'Québec et Montréal en duo', 'Ce séjour au Québec vous emmène sur le chemin du Roy, la plus ancienne route terrestre du Canada, reliant les villes les plus animées du pays : Montréal, Trois-Rivières et Québec. Commencez par la métropole américaine de Montréal, découvrez le mariage des quartiers anciens aux petites maisons colorées et des gratte-ciel typiquement américains. Puis faites la connaissance de Trois-Rivières, élue capitale culturelle du pays en 2009. En suivant le chemin du Roy, vous pourrez contempler le riche patrimoine de la Nouvelle-France qui longe le fleuve Saint-Laurent. Enfin, Québec saura vous séduire par son charme pittoresque, sa gastronomie et sa joie de vivre.', '', NULL, NULL, 0, '1', NULL),
+(3, NULL, 656, 3, 'djschnojshjesjro', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus', 'IMG_4107.JPG', '2016-02-26 17:05:44', '2016-02-26 17:05:44', 12, 'RO', NULL),
+(4, NULL, 656, 3, 'djschnojshjesjro', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus', 'IMG_4107.JPG', '2016-02-26 17:08:49', '2016-02-26 17:08:49', 12, 'RO', NULL),
+(5, NULL, 656, 3, 'djschnojshjesjro', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus', 'IMG_4107.JPG', '2016-02-26 17:08:57', '2016-02-26 17:08:57', 12, 'RO', NULL),
+(6, NULL, 656, 3, 'djschnojshjesjro', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus', 'IMG_4107.JPG', '2016-02-26 17:11:38', '2016-02-26 17:11:38', 12, 'RO', NULL),
+(7, NULL, 656, 3, 'djschnojshjesjro', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus', 'IMG_4107.JPG', '2016-02-26 17:12:07', '2016-02-26 17:12:07', 12, 'RO', NULL),
+(8, NULL, 656, 3, 'djschnojshjesjro', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus', 'IMG_4107.JPG', '2016-02-26 17:12:38', '2016-02-26 17:12:38', 12, 'RO', NULL),
+(9, NULL, 656, 3, 'djschnojshjesjro', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus', 'IMG_4107.JPG', '2016-02-26 17:13:07', '2016-02-26 17:13:07', 12, 'RO', NULL),
+(10, NULL, 656, 3, 'djschnojshjesjro', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus', 'IMG_4107.JPG', '2016-02-26 17:13:18', '2016-02-26 17:13:18', 12, 'RO', NULL),
+(11, NULL, 656, 3, 'djschnojshjesjro', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus', 'IMG_4107.JPG', '2016-02-26 17:13:36', '2016-02-26 17:13:36', 12, 'RO', NULL),
+(12, NULL, 656, 3, 'djschnojshjesjro', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus', 'IMG_4107.JPG', '2016-02-26 17:14:06', '2016-02-26 17:14:06', 12, 'RO', NULL),
+(13, NULL, 659, 3, 'vrkejfejuoevjipr&agrave;e', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus', 'IMG_4107.JPG', '2016-02-26 17:14:29', '2016-02-26 17:14:29', 12, 'TJ', NULL),
+(14, NULL, 659, 3, 'vrkejfejuoevjipr&agrave;e', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus', 'IMG_4107.JPG', '2016-02-26 17:16:12', '2016-02-26 17:16:12', 12, 'TJ', NULL),
+(15, NULL, 659, 3, 'vrkejfejuoevjipr&agrave;e', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus', 'IMG_4107.JPG', '2016-02-26 17:16:28', '2016-02-26 17:16:28', 12, 'TJ', NULL),
+(16, NULL, 659, 3, 'vrkejfejuoevjipr&agrave;e', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus', 'IMG_4107.JPG', '2016-02-26 17:18:44', '2016-02-26 17:18:44', 12, 'TJ', NULL),
+(17, NULL, 659, 3, 'vrkejfejuoevjipr&agrave;e', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus', 'IMG_4107.JPG', '2016-02-26 17:20:33', '2016-02-26 17:20:33', 12, 'TJ', NULL),
+(18, NULL, 659, 3, 'vrkejfejuoevjipr&agrave;e', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus', 'IMG_4107.JPG', '2016-02-26 17:21:48', '2016-02-26 17:21:48', 12, 'TJ', NULL),
+(19, NULL, 659, 3, 'vrkejfejuoevjipr&agrave;e', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus', 'IMG_4107.JPG', '2016-02-26 17:22:13', '2016-02-26 17:22:13', 12, 'TJ', NULL),
+(20, NULL, 659, 3, 'vrkejfejuoevjipr&agrave;e', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus', 'IMG_4107.JPG', '2016-02-26 17:22:51', '2016-02-26 17:22:51', 12, 'TJ', NULL),
+(21, NULL, 659, 3, 'az', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus', 'avatar_cp_big.jpg', '2016-02-29 10:02:50', '2016-02-29 10:02:50', 12, 'BZ', NULL);
 
 --
 -- Index pour les tables exportées
@@ -189,12 +189,6 @@ ALTER TABLE `days`
   ADD KEY `fk_day_Voyage1_idx` (`voyage_id`);
 
 --
--- Index pour la table `themes`
---
-ALTER TABLE `themes`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Index pour la table `users`
 --
 ALTER TABLE `users`
@@ -205,7 +199,6 @@ ALTER TABLE `users`
 --
 ALTER TABLE `voyages`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `fk_Voyage_theme_id1_idx` (`theme_id_id`),
   ADD KEY `fk_voyages_comments1_idx` (`comments_id`);
 
 --
@@ -228,20 +221,15 @@ ALTER TABLE `country`
 ALTER TABLE `days`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
 --
--- AUTO_INCREMENT pour la table `themes`
---
-ALTER TABLE `themes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
---
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT pour la table `voyages`
 --
 ALTER TABLE `voyages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=22;
 --
 -- Contraintes pour les tables exportées
 --
@@ -251,12 +239,6 @@ ALTER TABLE `voyages`
 --
 ALTER TABLE `days`
   ADD CONSTRAINT `fk_day_Voyage1` FOREIGN KEY (`voyage_id`) REFERENCES `voyages` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Contraintes pour la table `voyages`
---
-ALTER TABLE `voyages`
-  ADD CONSTRAINT `fk_Voyage_theme_id1` FOREIGN KEY (`theme_id_id`) REFERENCES `themes` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
