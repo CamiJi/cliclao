@@ -25,21 +25,21 @@
                     <div class = "col-sm-6 col-md-4">
                       <div class="thumbnail tile tile-medium tile-teal">
                         <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
-                          <h1>Voyage1</h1>
+                          <img src="<?= $this->assetUrl('img/banff4X4.jpg') ?>" alt="">
                         </a>                  
                       </div>
                     </div>
                     <div class = "col-sm-6 col-md-4">
                       <div class="thumbnail tile tile-medium tile-teal">
                         <a href="<?= $this->url('itineraire' , ['id'=> 2]); ?>" >
-                          <h1>Voyage2</h1>
+                          <img src="<?= $this->assetUrl('img/goat4X4.jpg') ?>" alt="">
                         </a>                  
                       </div>
                     </div>
                     <div class = "col-sm-6 col-md-4">
                       <div class="thumbnail tile tile-medium tile-teal">
                         <a href="<?= $this->url('itineraire' , ['id'=> 3]); ?>" >
-                          <h1>Voyage3</h1>
+                          <img src="<?= $this->assetUrl('img/katwalk4X4.jpg') ?>" alt="">
                         </a>                  
                       </div>
                     </div>
@@ -55,21 +55,21 @@
                     <div class = "col-sm-6 col-md-4">
                       <div class="thumbnail tile tile-medium tile-teal">
                         <a href="<?= $this->url('itineraire' , ['id'=> 4]); ?>" >
-                          <h1>Voyage1</h1>
+                          <img src="<?= $this->assetUrl('img/moraine4X4.jpg') ?>" alt="">
                         </a>                  
                       </div>
                     </div>
                     <div class = "col-sm-6 col-md-4">
                       <div class="thumbnail tile tile-medium tile-teal">
                         <a href="<?= $this->url('itineraire' , ['id'=> 5]); ?>" >
-                          <h1>Voyage2</h1>
+                          <img src="<?= $this->assetUrl('img/niagara4X4.jpg') ?>" alt="">
                         </a>                  
                       </div>
                     </div>
                     <div class = "col-sm-6 col-md-4">
                       <div class="thumbnail tile tile-medium tile-teal">
                         <a href="<?= $this->url('itineraire' , ['id'=> 6]); ?>" >
-                          <h1>Voyage3</h1>
+                          <img src="<?= $this->assetUrl('img/peyto4X4.jpeg') ?>" alt="">
                         </a>                  
                       </div>
                     </div>
@@ -83,21 +83,21 @@
                     <div class = "col-sm-6 col-md-4">
                       <div class="thumbnail tile tile-medium tile-teal">
                         <a href="<?= $this->url('itineraire' , ['id'=> 7]); ?>" >
-                          <h1>Voyage1</h1>
+                          <img src="<?= $this->assetUrl('img/husky4X4.jpg') ?>" alt="">
                         </a>                  
                       </div>
                     </div>
                     <div class = "col-sm-6 col-md-4">
                       <div class="thumbnail tile tile-medium tile-teal">
                         <a href="<?= $this->url('itineraire' , ['id'=> 8]); ?>" >
-                          <h1>Voyage2</h1>
+                          <img src="<?= $this->assetUrl('img/whale.jpg') ?>" alt="">
                         </a>                  
                       </div>
                     </div>
                     <div class = "col-sm-6 col-md-4">
                       <div class="thumbnail tile tile-medium tile-teal">
                         <a href="<?= $this->url('itineraire' , ['id'=> 9]); ?>" >
-                          <h1>Voyage3</h1>
+                          <img src="<?= $this->assetUrl('img/quebec4X4.jpg') ?>" alt="">
                         </a>                  
                       </div>
                     </div>

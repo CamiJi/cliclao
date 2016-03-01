@@ -76,21 +76,21 @@
               <div class = "col-sm-6 col-md-4">
                 <div class="thumbnail tile tile-medium tile-teal">
                   <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
-                    <h1>Tuile1</h1>
+                    <img src="<?= $this->assetUrl('img/bali4X4.jpg') ?>" alt="">
                   </a>                  
                 </div>
               </div>
               <div class = "col-sm-6 col-md-4">
                 <div class="thumbnail tile tile-medium tile-teal">
                   <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
-                    <h1>Tuile2</h1>
+                    <img src="<?= $this->assetUrl('img/yucatan4X4.jpg') ?>" alt="">
                   </a>                  
                 </div>
               </div>
               <div class = "col-sm-6 col-md-4">
                 <div class="thumbnail tile tile-medium tile-teal">
                   <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
-                    <h1>Tuile2</h1>
+                    <img src="<?= $this->assetUrl('img/macchu4X4.jpg') ?>" alt="">
                   </a>                  
                 </div>
               </div>
@@ -109,21 +109,21 @@
               <div class = "col-sm-6 col-md-4">
                 <div class="thumbnail tile tile-medium tile-teal">
                   <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
-                    <h1>Tuile4</h1>
+                    <img src="<?= $this->assetUrl('img/iceland4X4.jpg') ?>" alt="">
                   </a>                  
                 </div>
               </div>
               <div class = "col-sm-6 col-md-4">
                 <div class="thumbnail tile tile-medium tile-teal">
                   <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
-                    <h1>Tuile5</h1>
+                    <img src="<?= $this->assetUrl('img/ny4X4.jpg') ?>" alt="">
                   </a>                  
                 </div>
               </div>
               <div class = "col-sm-6 col-md-4">
                 <div class="thumbnail tile tile-medium tile-teal">
                   <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
-                    <h1>Tuile6</h1>
+                    <img src="<?= $this->assetUrl('img/iguazu4X.jpg') ?>" alt="">
                   </a>                  
                 </div>
               </div>
