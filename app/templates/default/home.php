@@ -10,22 +10,22 @@
   	<div id="carrousel">
   		<div id="slide1" class="slide">
   			<div class="visu">
-  			<img src="../public/assets/img/home-premier-voyage-1980x450_0.jpg">
+  			<img src="<?= $this->assetUrl('img/home-premier-voyage-1980x450_0.jpg') ?>">
   			</div>
   		</div>
   		<div id="slide2" class="slide">
   			<div class="visu">
-  			<img src="../public/assets/img/home-thematiques-1980x4502_2.jpg">
+  			<img src="<?= $this->assetUrl('img/home-thematiques-1980x4502_2.jpg') ?>">
   			</div>
   		</div>
   		<div id="slide3" class="slide">
   			<div class="visu">
-  			<img src="../public/assets/img/home-tous-nos-voyages-ete-au-canada-1980x450.jpg">
+  			<img src="<?= $this->assetUrl('img/home-tous-nos-voyages-ete-au-canada-1980x450.jpg') ?>">
   			</div>
   		</div>
   		<div id="slide4" class="slide">
   			<div class="visu">
-  			<img src="../public/assets/img/home-voyage-sur-mesure2-1980x450.jpg">
+  			<img src="<?= $this->assetUrl('img/home-voyage-sur-mesure2-1980x450.jpg') ?>">
   			</div>
   		</div>
   	

@@ -15,12 +15,12 @@ class RegisterController extends Controller
 	{
 		$this->show('register/index');
 	}
-
+ 
 
 
 	public function registerUser()
 	{
-		debug($_POST);
+		// debug($_POST);
 
 		$email = trim(htmlentities($_POST['email']));
 		$name = trim(htmlentities($_POST['name']));

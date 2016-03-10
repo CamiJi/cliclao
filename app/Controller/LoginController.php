@@ -59,7 +59,7 @@ class LoginController extends Controller
 
 	public function logoutUser()
 	{
-		echo "On entre dans le LoginController-> Method logoutUser ";
+		// echo "On entre dans le LoginController-> Method logoutUser ";
 		$authentificationManager = new AuthentificationManager();
 		$authentificationManager->logUserOut();
 		$this->redirectToRoute('home');

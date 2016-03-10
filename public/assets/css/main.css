@@ -176,18 +176,19 @@ footer img {
 #titleSearch {
 	position: absolute;
 	top: 50px;
-	left: 450px;
+	
 }
 
 #buttonSearch {
 	position: absolute;
 	top: 250px;
 	width: 65em;
-	left: 485px;
+	left: 8%;
 }
 #buttonGo {
 	top: -5px;
 }
+
 #slogan {
 
 	color: white;
