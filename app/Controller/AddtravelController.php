@@ -29,7 +29,7 @@ class AddtravelController extends Controller
 
 		// 1.J'initialise la direction du dossier "réceptacle"
 
-		$imagesDir = __DIR__.'/../../uploads/';
+		$imagesDir = __DIR__.'/../../public/assets/uploads/';
 
 
 
@@ -147,7 +147,7 @@ class AddtravelController extends Controller
 				'created_at' => $date->format('Y-m-d H:i:s'),
 				'updated_at' => $date->format('Y-m-d H:i:s'),
 
-				'img_voyage' => $nomPhoto,
+				'img_voyage' => 'uploads/'.$nomPhoto,
 
 				'country_id' => $countryTravel,
 

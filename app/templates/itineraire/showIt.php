@@ -7,7 +7,7 @@
 
           <div class="col-xs-12 col-md-7" id="colMainItineraire">
             <div id="divImgItineraire">
-              <img id="imgItineraire" src="../../uploads/<?= $it[0]['img_voyage'] ?>">
+              <img id="imgItineraire" src="<?= $this->assetUrl($it[0]['img_voyage']) ?>">
             </div> <!-- end divImgItineraire -->
             <div id="divNomItineraire">
               <h3><?= $it[0]['name'] ?></h3>
