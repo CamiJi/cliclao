@@ -7,40 +7,16 @@
   
   	<!-- TODO intgrer un background video -->
 
-  	<div id="carrousel">
-  		<div id="slide1" class="slide">
-  			<div class="visu">
-  			<img src="<?= $this->assetUrl('img/home-premier-voyage-1980x450_0.jpg') ?>">
-  			</div>
-  		</div>
-  		<div id="slide2" class="slide">
-  			<div class="visu">
-  			<img src="<?= $this->assetUrl('img/home-thematiques-1980x4502_2.jpg') ?>">
-  			</div>
-  		</div>
-  		<div id="slide3" class="slide">
-  			<div class="visu">
-  			<img src="<?= $this->assetUrl('img/home-tous-nos-voyages-ete-au-canada-1980x450.jpg') ?>">
-  			</div>
-  		</div>
-  		<div id="slide4" class="slide">
-  			<div class="visu">
-  			<img src="<?= $this->assetUrl('img/home-voyage-sur-mesure2-1980x450.jpg') ?>">
-  			</div>
-  		</div>
-  	
+    <div id="bandeauDiv">
 
 
-  	<div class="container">
-  		<div class="row" id="titleSearch">
+
+        <img src="<?= $this->assetUrl('img/home-voyage-sur-mesure2-1980x450.jpg') ?>">
+ 		
   			<div class="col-md-6 col-md-offset-3" id="slogan">
   				<h1>Créer votre voyage sur mesure avec une agence locale</h1>
-  			</div>
-  		</div>
-  		<div class="row" id="buttonSearch">
-  			<div class="col-md-6 col-md-offset-3">
-  				<div class = "input-group">
 
+  				<div class = "input-group">
   					<span class = "input-group-btn">
   						<button class = "btn btn-default" type = "button" id="buttonGo">
   							Go!
@@ -48,17 +24,12 @@
   					</span>
 
   					<input type = "text" class = "form-control">
-
   				</div><!-- /input-group -->
+
   			</div> <!-- End of .col-md-6 col-md-offset-3 -->
-  		</div>
-
-  	</div>
-  	<!-- glyphicon glyphicon-search pour l'input -->
-
-
-
-  </div> <!-- End rowVideo -->
+  	
+  
+    </div> <!-- End row #bandeau -->
 
 
 
