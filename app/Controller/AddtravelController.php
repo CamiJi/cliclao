@@ -50,6 +50,9 @@ class AddtravelController extends Controller
 
 		$travelOwnerId = trim(htmlentities($_SESSION['user']['id']));
 
+		// print_r($_POST);
+		// die();
+
 		// 2.2 On récupère la date , tranquillou bilou pour pouvoir l'insérer dans notre BDD
 
 		$date = new DateTime();

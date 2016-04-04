@@ -29,10 +29,12 @@
 
                   <div id="divDifficulteItineraire" class="col-md-1">
                     <h4 id="difficulteItineraire">Difficulté: </h4>
-                    <i class="fa fa-hand-scissors-o"></i>
-                    <i class="fa fa-hand-scissors-o"></i>
-                    <i class="fa fa-hand-scissors-o"></i>                  
-                     <!-- TODO: on repetera ce signe le nombre de niveau de difficulté -->  
+
+                      <!-- J'ajoute ici via une boucle for le nombre de difficulté du voyage -->
+                      <?php for ($i=0; $i < $it[0]['difficulte']; $i++) :?>
+                        <i class="fa fa-hand-scissors-o"></i>
+                      <?php endfor ?>   
+
                   </div> <!-- End#divDifficulteItineraire -->
 
                   <div id="divThemesItineraire" class="col-md-2">
