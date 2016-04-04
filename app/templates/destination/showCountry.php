@@ -12,10 +12,21 @@
             <div class="col-md-12" id="colonne1">
                 <div class="row" id="textePresentationPays">
 
+                <?php if (!empty($country)) : ?>
+                  
                 <h2>Spécialiste des voyages au <?= $country['name'] ?> sur-mesure</h2>
 
                 <p><?= $country['description'] ?></p>
                   
+                <?php endif; ?>
+
+
+                <?php if (!empty($errors['countryNotFind'])): ?>
+
+                    <h2 class='bg-danger'>Votre recherche :<?= $errors['countryNotFind'] ?> n'a retourné aucun résultat. <a href="<?= $this->url('home'); ?>"></br>Cliquez ici pour retourner à la page d'acceuil.</a></h2>
+                <?php endif; ?>
+              
+
                 </div>
                 </br>
 

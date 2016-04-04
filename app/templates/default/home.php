@@ -15,16 +15,17 @@
  		
   			<div class="col-md-6 col-md-offset-3" id="slogan">
   				<h1>Créer votre voyage sur mesure avec une agence locale</h1>
+          <form action="<?= $this->url('search'); ?>" method="POST">
+    				<div class = "input-group">
+    					<span class = "input-group-btn">
+    						<button class = "btn btn-default" type = "submit" id="buttonGo">
+    							Go!
+    						</button>
+    					</span>
 
-  				<div class = "input-group">
-  					<span class = "input-group-btn">
-  						<button class = "btn btn-default" type = "button" id="buttonGo">
-  							Go!
-  						</button>
-  					</span>
-
-  					<input type = "text" class = "form-control">
-  				</div><!-- /input-group -->
+    					<input type = "text" class = "form-control" name="search" id="searchId" placeholder="Vers quelle destination désirez-vous vous envoler?">
+    				</div><!-- /input-group -->
+          </form>
 
   			</div> <!-- End of .col-md-6 col-md-offset-3 -->
   	

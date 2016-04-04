@@ -54,7 +54,7 @@
               </div> <!-- End of #divGroupButtons -->
 
               <div id="divApiGMItineraire">
-                <img src="<?= $this->assetUrl('img/mapCanada.jpg') ?>" alt="" id="apiGMItineraire">             
+<!--                 <img src="" alt="" id="apiGMItineraire">  -->            
               </div> <!-- end #divApiGMItineraire -->
              
             </div> <!-- End #divCaracteristiquesItineraire -->         

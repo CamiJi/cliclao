@@ -11,6 +11,10 @@
 		// Page Destination (pays par pays)
 		['GET', '/destination/[:country]', 'Destination#showCountry', 'destinationCountry'],
 
+		//Page de résultats suite à une recherche
+		['POST', '/recherche', 'Destination#showSearchResult', 'search'],
+
+
 		// Page Itinéraire
 		['GET', '/itineraire/[:id]', 'Itineraire#showIt', 'itineraire'],
 
@@ -35,4 +39,6 @@
 		// Page de backoffice et de privatehome
 		['GET', '/private', 'default#privateHome', 'privateHome'],
 		['GET', '/bo', 'default#backOffice', 'bo'],
+
+
 	);
