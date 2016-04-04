@@ -22,7 +22,7 @@
             <div id="divCaracteristiquesItineraire">
               <div id="divContainerCaractItineraire" class="container">
                 <div id="divCaracteristiquesSql" class="row">
-                  <div id="divPrixItineraire" class="col-md-1">
+                  <div id="divPrixItineraire" class="col-md-2">
                     <h4>Prix:</h4>
                     <p id="prixItineraire"><?= $it[0]['budget'] ?> € / Personne</p>
                   </div> <!-- End#divPrixItineraire -->
@@ -37,13 +37,7 @@
 
                   </div> <!-- End#divDifficulteItineraire -->
 
-                  <div id="divThemesItineraire" class="col-md-2">
-                    <h4>Thème du voyage:</h4>
-                    <i class="fa fa-anchor"></i>
-                    <i class="fa fa-car"></i>
-                    <i class="fa fa-ship"></i>
-                    <i class="fa fa-bicycle"></i>            
-                  </div> <!-- End divThemesItineraire -->
+
 
                 </div> <!-- End of #divContainerCaractItineraire --> 
               </div> <!-- End of #divCaracteristiquesSql -->
