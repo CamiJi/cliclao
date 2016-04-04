@@ -3,7 +3,7 @@
 <?php $this->start('main_content') ?> 
 <div class="row" id="rowFormAddtravel">
 	<div class="col-md-8 col-md-offset-2">
-
+		
 
 		<div>
 			<h2 class="col-md-8 col-md-offset-3">Ajouter un nouveau voyage!</h2>
@@ -13,8 +13,8 @@
 
 		<form action="<?= $this->url('addTravelUser') ; ?>" enctype="multipart/form-data" method="POST" class="form-container col-md-6 col-md-offset-3">
 			
-		<?php if (isset($admission)): ?>
-			<p class="bg-success">Votre voyage a bien été enregistré, merci !</p> 
+		<?php if (isset($lastInsertId)): ?>
+			<p class="bg-success">Votre voyage a bien été enregistré,merci. <a href="<?= $this->url('itineraire' , ['id'=> $lastInsertId]); ?>" ><br>Vous pouvez le voir ici!</a></p> 
 		<?php endif; ?>
 
 			<div class="form-group">

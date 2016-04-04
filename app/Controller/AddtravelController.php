@@ -153,24 +153,26 @@ class AddtravelController extends Controller
 
 
 			]);
-				
+
+			
+
+			$lastinsertId = $resultAddTravel['id'];
 
 
 			if ($resultAddTravel) {
 
 				move_uploaded_file($_FILES['photoTravel']['tmp_name'], $imagesDir.$nomPhoto);
 
-				$admission = "<span class='bg-info'>Merci pour votre voyage !</span>";
 
 
-			$this->show('add_travel/index',['admission' => $admission , 'errors' => $errors]);
+				$this->show('add_travel/index',['lastInsertId' => $lastinsertId , 'errors' => $errors]);
 
 			}
 			
 		}
 		else {
 			
-		https://www.grafikart.fr/tutoriels/php/intervention-image-375
+		//www.grafikart.fr/tutoriels/php/intervention-image-375
 	
 		$this->show('add_travel/index', ['errors' => $errors]);
 		}
