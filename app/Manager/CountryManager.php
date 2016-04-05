@@ -14,4 +14,15 @@ class CountryManager extends \W\Manager\Manager
 		return $sth->fetch();
 	}
 
+	public function randomTravel(){
+
+		$sql = "SELECT * FROM " . $this->table ." ORDER BY RAND() LIMIT 9";
+		$sth = $this->dbh->prepare($sql);
+		$sth->execute();
+
+		return $sth->fetchAll();
+	}
+
+
+
 }

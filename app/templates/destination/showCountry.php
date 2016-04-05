@@ -23,7 +23,7 @@
 
                 <?php if (!empty($errors['countryNotFind'])): ?>
 
-                    <h2 class='bg-danger'>Votre recherche :<?= $errors['countryNotFind'] ?> n'a retourné aucun résultat. <a href="<?= $this->url('home'); ?>"></br>Cliquez ici pour retourner à la page d'acceuil.</a></h2>
+                    <h2 class='bg-danger'>Votre recherche : "<?= $errors['countryNotFind'] ?> "n'a retourné aucun résultat. <a href="<?= $this->url('home'); ?>"></br>Cliquez ici pour retourner à la page d'acceuil.</a></h2>
                 <?php endif; ?>
               
 

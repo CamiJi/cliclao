@@ -79,6 +79,7 @@
                     <?php foreach ($days as $keyVoyages => $voyage): ?>
 
                             <div  class="dayByDay" id="day<?php echo $voyage['ordering']; ?>">
+                              <p>Jour <?php echo $voyage['ordering']; ?></p>
                               <h4><?php echo $voyage['name']; ?></h4>
                               <p><?php echo $voyage['bodyText']; ?></p>                  
                             </div> <!-- rowDayByDay -->
@@ -87,7 +88,7 @@
 
                   <?php else: ?>
                     <div class="alert alert-danger" role="alert">
-                    <p>Désolé mais votre recherche ne retourne aucun résultat</p>
+                    <p>Ce voyage ne contient pas de descriptif de jour par jour</p>
                     </div>
                   <?php endif; ?>
 

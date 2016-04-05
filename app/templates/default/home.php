@@ -41,32 +41,21 @@
 
 
 
+             <?php if(!empty($randomTravel)): ?>
+                    <?php foreach ($randomTravel as $keyVoyages => $voyage): ?>
+                      <div class = "col-sm-6 col-md-4">
+                        <div class="thumbnail tile tile-medium tile-teal">
+                          <a href="<?= $this->url('itineraire' , ['id'=> $voyage['id']]); ?>" >
+                          <img src="<?= $this->assetUrl($voyage['img_voyage']) ?>" alt="">
+                          <p><?php echo $voyage['name']; ?></p>
+                          <p>Prix: <?php echo $voyage['budget']; ?> €</p>
+                          </a>                  
+                        </div>
+                      </div>
+                    <?php endforeach; ?>
+              <?php endif; ?>
 
-
-            <!-- Start Row Thumbnails 1 -->
-            <div class="row" id=ThumbnailsRow1>
-              <div class = "col-sm-6 col-md-4">
-                <div class="thumbnail tile tile-medium tile-teal">
-                  <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
-                    <img src="<?= $this->assetUrl('img/bali4X4.jpg') ?>" alt="">
-                  </a>                  
-                </div>
-              </div>
-              <div class = "col-sm-6 col-md-4">
-                <div class="thumbnail tile tile-medium tile-teal">
-                  <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
-                    <img src="<?= $this->assetUrl('img/yucatan4X4.jpg') ?>" alt="">
-                  </a>                  
-                </div>
-              </div>
-              <div class = "col-sm-6 col-md-4">
-                <div class="thumbnail tile tile-medium tile-teal">
-                  <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
-                    <img src="<?= $this->assetUrl('img/macchu4X4.jpg') ?>" alt="">
-                  </a>                  
-                </div>
-              </div>
-            </div> <!-- ThumbnailsRow1 -->
+          
 
 
             <div id="apiGm" class="row">
@@ -76,31 +65,6 @@
             </div>
 
 
-            <!-- Start Row Thumbnails 2 -->
-            <div class="row" id=ThumbnailsRow2>
-              <div class = "col-sm-6 col-md-4">
-                <div class="thumbnail tile tile-medium tile-teal">
-                  <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
-                    <img src="<?= $this->assetUrl('img/iceland4X4.jpg') ?>" alt="">
-                  </a>                  
-                </div>
-              </div>
-              <div class = "col-sm-6 col-md-4">
-                <div class="thumbnail tile tile-medium tile-teal">
-                  <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
-                    <img src="<?= $this->assetUrl('img/ny4X4.jpg') ?>" alt="">
-                  </a>                  
-                </div>
-              </div>
-              <div class = "col-sm-6 col-md-4">
-                <div class="thumbnail tile tile-medium tile-teal">
-                  <a href="<?= $this->url('itineraire' , ['id'=> 1]); ?>" >
-                    <img src="<?= $this->assetUrl('img/iguazu4X.jpg') ?>" alt="">
-                  </a>                  
-                </div>
-              </div>
-
-            </div> <!-- End ThumbnailsRow2 -->
           </div> <!-- End container main -->
 	
 
