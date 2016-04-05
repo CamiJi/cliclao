@@ -80,7 +80,7 @@ class AddtravelController extends Controller
 			$errors['travelName']= "<span class='bg-danger'>Le nom du voyage est obligatoire !</span>";
 		}
 		elseif(strlen($travelName) < 2 || strlen($travelName) > 45) {
-			$errors['travelName'] = "<span class='bg-danger'>Le nom du voyage doit être au minimum de 5 caractères et au maximum de 45 carcactères ! </span>" ;
+			$errors['travelName'] = "<span class='bg-danger'>Le nom du voyage doit être au minimum de 5 caractères et au maximum de 45 caractères ! </span>" ;
 		}
 
 
@@ -102,8 +102,8 @@ class AddtravelController extends Controller
 		if(empty($travelDescription)) {
 			$errors['travelDescription']= "<span class='bg-danger'>La description du voyage est obligatoire !</span>";
 		}
-		elseif(strlen($travelDescription) < 500 || strlen($travelDescription) > 1000) {
-			$errors['travelDescription'] = "<span class='bg-danger'> La description du voyage doit être de 500 à 1000 caractères ! </span>" ;
+		elseif(strlen($travelDescription) < 200 || strlen($travelDescription) > 2000) {
+			$errors['travelDescription'] = "<span class='bg-danger'> La description du voyage doit être de 200 à 2000 caractères ! </span>" ;
 		}
 
 
